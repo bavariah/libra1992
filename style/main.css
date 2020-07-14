@@ -6,11 +6,11 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: #fff;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
 }
 a {
-  color: #540054;
+  color: #333;
   text-decoration: none;
 }
 ul,
@@ -19,27 +19,33 @@ ul,
 }
 /* navigation */
 header {
+  background-color: #c7c4c4;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 60px;
+  justify-content: center;
+  height: 70px;
   padding: 20px 0;
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 50px 0;
 }
 header ul,
 .links {
   display: flex;
 }
+header .links {
+  padding-left: 50px;
+}
+header .links .la-instagram {
+  padding-left: 10px;
+}
 header ul li {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 header ul li a {
   padding-bottom: 2px;
   font-weight: bold;
 }
 header ul li a:hover {
-  border-bottom: 2px solid #540054;
+  border-bottom: 2px solid #333;
 }
 /* container grid*/
 .grid-items {
@@ -56,15 +62,19 @@ header ul li a:hover {
 
 /* showcase info firm */
 .showcase {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  width: 90%;
-  margin: 100px auto;
-}
-.showcase .photo-area img {
-  width: 100%;
+  background-color: #ebe9e9;
   height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.showcase .showcase-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+main.showcase .showcase-grid .text-info {
+  padding-left: 100px;
 }
 /* footer */
 .footer-top {
@@ -72,8 +82,8 @@ header ul li a:hover {
   color: #fff;
   display: flex;
   text-align: center;
-  justify-content: center;
-  height: 200px;
+  justify-content: space-around;
+  height: 250px;
 }
 .footer-top h4 {
   padding-top: 10px;
