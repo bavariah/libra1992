@@ -14,6 +14,14 @@ a {
   color: #333;
   text-decoration: none;
 }
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  z-index: 3;
+  display: none;
+}
 .cta-bars {
   position: fixed;
   display: flex;
@@ -305,5 +313,36 @@ main.showcase .showcase-grid .text-info {
   }
   main.showcase .showcase-grid .text-info p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+  header ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+  header ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+  header ul.main-menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+  header ul.main-menu li:last-child {
+    border-bottom: 0;
   }
 }

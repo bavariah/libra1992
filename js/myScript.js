@@ -35,3 +35,9 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   timer = setTimeout(showSlides, 6000);
 }
+
+document
+  .querySelector(".menu-btn")
+  .addEventListener("click", () =>
+    document.querySelector(".main-menu").classList.toggle("show")
+  );
