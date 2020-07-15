@@ -10,6 +10,7 @@ body {
   line-height: 1.5;
 }
 a {
+  cursor: pointer;
   color: #333;
   text-decoration: none;
 }
@@ -87,21 +88,41 @@ main.showcase .showcase-grid .text-info {
 }
 /* footer */
 .footer-top {
-  background-color: #333;
+  background-color: #2e2e2e;
   color: #fff;
+  height: 350px;
+  margin-top: 50px;
   display: flex;
-  text-align: center;
-  justify-content: space-around;
-  height: 250px;
+  justify-content: center;
+  align-items: center;
 }
-.footer-top h4 {
-  padding-top: 10px;
+.footer-top .overlay {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 0 auto;
 }
-.footer-top .contact {
-  padding-top: 20px;
+.footer-top .overlay .forma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top .overlay .forma img {
+  width: 100%;
+  height: 240px;
+}
+.footer-top .overlay h4 {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px dotted pink;
+}
+.footer-top .overlay .contact {
+  padding-top: 30px;
   text-align: left;
 }
-.footer-top .contact li {
+.footer-top .overlay .contact li {
   padding-top: 10px;
 }
 .footer-bottom {
