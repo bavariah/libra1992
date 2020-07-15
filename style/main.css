@@ -14,14 +14,30 @@ a {
   color: #333;
   text-decoration: none;
 }
+.cta-bars {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  bottom: 60%;
+  right: 0px;
+}
 .cta-tel {
   background-color: rgb(5, 129, 5);
   border-radius: 10px;
-  position: fixed;
-  z-index: 5;
-  bottom: 50%;
-  right: 20px;
   color: #fff;
+}
+.cta-fb {
+  background-color: rgb(12, 100, 182);
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 5px;
+}
+.cta-ins {
+  background-color: rgb(120, 25, 163);
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 5px;
 }
 ul,
 .links {
