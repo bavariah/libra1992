@@ -81,6 +81,9 @@ header ul li a:hover {
   margin: 200px auto;
   max-width: 1440px;
 }
+.grid-items .grid-item {
+  background-color: #ebebeb;
+}
 .grid-items .photo {
   width: 100%;
   height: 300px;
@@ -287,5 +290,20 @@ main.showcase .showcase-grid .text-info {
   .showcase {
     height: auto;
     flex-direction: column;
+  }
+
+  main.showcase .showcase-grid {
+    flex-direction: column;
+    margin: 50px 50px;
+  }
+  main.showcase .showcase-grid .text-info {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  main.showcase .showcase-grid .text-info h1 {
+    font-size: 1.5rem;
+  }
+  main.showcase .showcase-grid .text-info p {
+    font-size: 0.9rem;
   }
 }
