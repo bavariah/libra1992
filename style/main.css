@@ -1,3 +1,9 @@
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
 * {
   padding: 0;
   margin: 0;
@@ -53,7 +59,7 @@ ul,
 }
 /* navigation */
 header {
-  background-color: #c7c4c4;
+  background: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +105,7 @@ header ul li a:hover {
 
 /* showcase info firm */
 .showcase {
-  background-color: #ebe9e9;
+  background: var(--primary);
   height: 400px;
   display: flex;
   align-items: center;
@@ -112,6 +118,27 @@ main.showcase .showcase-grid {
 }
 main.showcase .showcase-grid .text-info {
   padding-left: 100px;
+}
+/* firma boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.box:hover {
+  transform: scale(1.1);
 }
 /* footer */
 .footer-top {
@@ -297,7 +324,6 @@ main.showcase .showcase-grid .text-info {
 
   .showcase {
     height: auto;
-    flex-direction: column;
   }
 
   main.showcase .showcase-grid {
@@ -309,10 +335,13 @@ main.showcase .showcase-grid .text-info {
     padding-top: 30px;
   }
   main.showcase .showcase-grid .text-info h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   main.showcase .showcase-grid .text-info p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  main.showcase .showcase-grid {
+    align-items: center;
   }
 }
 
@@ -344,5 +373,25 @@ main.showcase .showcase-grid .text-info {
   }
   header ul.main-menu li:last-child {
     border-bottom: 0;
+  }
+  .cta-bars {
+    bottom: 50%;
+  }
+  .cta-tel {
+    border-radius: 5px;
+  }
+  .cta-fb {
+    border-radius: 5px;
+    margin-top: 0;
+  }
+  .cta-ins {
+    border-radius: 5px;
+    margin-top: 0;
+  }
+  .la-3x {
+    font-size: 2rem;
+  }
+  .links {
+    display: none;
   }
 }
