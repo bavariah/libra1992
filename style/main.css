@@ -317,14 +317,14 @@ main.showcase .showcase-grid .text-info p {
   }
   .cta-fb {
     border-radius: 5px;
-    margin-top: 0;
+    margin-top: 3px;
   }
   .cta-ins {
     border-radius: 5px;
-    margin-top: 0;
+    margin-top: 3px;
   }
   .la-3x {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .links {
     display: none;
