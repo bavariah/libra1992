@@ -475,3 +475,9 @@ main.showcase .showcase-grid .text-info p {
     display: none;
   }
 }
+@media (max-width: 375px) {
+  main.showcase .showcase-grid .logo img {
+    width: 200px;
+    height: auto;
+  }
+}
