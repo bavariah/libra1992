@@ -349,20 +349,31 @@ main.showcase .showcase-grid .text-info p {
   }
   .yell {
     background-color: #dbdb34;
+    font-size: 0.9rem;
   }
   .gree {
     background-color: #62d658;
     color: #fff;
+    font-size: 0.8rem;
   }
   .pink {
     background-color: #f06ed6;
+    font-size: 0.9rem;
   }
   .blue {
     background-color: #5cb1ed;
     color: #fff;
+    font-size: 0.9rem;
   }
   .footer-top {
     margin-top: 50px;
+  }
+  .footer-top .overlay .info-site ul {
+    padding-left: 20px;
+  }
+  .footer-top .overlay .forma img {
+    width: 250px;
+    height: auto;
   }
   /* Slideshow container */
   .slideshow-container {
