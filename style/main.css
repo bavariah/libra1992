@@ -83,9 +83,11 @@ header ul li {
 header ul li a {
   padding-bottom: 2px;
   font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
 }
 header ul li a:hover {
   border-bottom: 2px solid #333;
+  opacity: 0.9;
 }
 /* container grid*/
 .grid-items {
@@ -141,6 +143,10 @@ main.showcase .showcase-grid .text-info p {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
+.boxes .box p {
+  padding-top: 10px;
+  text-transform: uppercase;
+}
 .box:hover {
   transform: scale(1.06);
 }
@@ -163,7 +169,6 @@ main.showcase .showcase-grid .text-info p {
   background-color: #2e2e2e;
   color: #fff;
   height: 350px;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -345,6 +350,9 @@ main.showcase .showcase-grid .text-info p {
     background-color: #5cb1ed;
     color: #fff;
   }
+  .footer-top {
+    margin-top: 50px;
+  }
   /* Slideshow container */
   .slideshow-container {
     max-width: 700px;
@@ -390,9 +398,9 @@ main.showcase .showcase-grid .text-info p {
   .text {
     color: #f2f2f2;
     font-size: 20px;
-    padding: 8px 12px;
+    padding: 10px 12px;
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     width: 100%;
     text-transform: uppercase;
     text-align: center;
