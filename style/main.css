@@ -4,6 +4,9 @@
   --light: #fff;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -81,6 +84,7 @@ header ul li {
   padding: 0 20px;
 }
 header ul li a {
+  text-transform: uppercase;
   padding-bottom: 2px;
   font-weight: bold;
   transition: opacity 0.3s ease-in-out;
