@@ -134,11 +134,11 @@ main.showcase .showcase-grid .text-info {
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 .box:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 .yell:hover {
   background-color: rgb(212, 212, 65);
