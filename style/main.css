@@ -69,6 +69,9 @@ header {
   height: 130px;
   padding: 20px 0;
   margin: 0;
+  -moz-box-shadow: inset 0 -10px 10px -10px #000000;
+  -webkit-box-shadow: inset 0 -10px 10px -10px #000000;
+  box-shadow: inset 0 -10px 10px -10px #000000;
 }
 header .head-logo img {
   width: 100%;
@@ -230,7 +233,7 @@ main.showcase .showcase-grid .text-info p {
   color: #fff;
 }
 .pink:hover {
-  background-color: #f06ed6;
+  background-color: #ffffff;
 }
 .blue:hover {
   background-color: #5cb1ed;
@@ -415,7 +418,7 @@ main.showcase .showcase-grid .text-info p {
     font-size: 0.8rem;
   }
   .pink {
-    background-color: #f06ed6;
+    background-color: #ffffff;
     font-size: 0.9rem;
   }
   .blue {
