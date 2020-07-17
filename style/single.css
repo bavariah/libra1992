@@ -109,6 +109,14 @@ main.wrapper {
   margin: 0 auto;
   padding: 50px 25px;
 }
+.wrapper .blog-post h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.wrapper .blog-post p {
+  line-height: 2;
+}
+
 .wrapper .banner {
   background: url(/img/bulb.jpg) center;
   height: 500px;
