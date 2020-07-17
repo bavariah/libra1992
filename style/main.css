@@ -66,9 +66,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 130px;
   padding: 20px 0;
-  margin: 50px 0;
+  margin: 0;
+}
+header .head-logo img {
+  width: 100%;
+  max-height: 120px;
+  max-width: 250px;
+}
+header ul {
+  padding-left: 50px;
 }
 header ul,
 .links {
@@ -81,7 +89,7 @@ header .links .la-instagram {
   padding-left: 10px;
 }
 header ul li {
-  padding: 0 20px;
+  padding: 0 25px;
 }
 header ul li a {
   text-transform: uppercase;
@@ -118,16 +126,24 @@ header ul li a:hover {
 
 /* showcase info firm */
 .showcase {
-  background: #d7f6fa;
-  height: 400px;
+  position: relative;
+  background: url(../img/darkness.jpg) no-repeat center center/cover;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main.showcase .showcase-grid {
-  max-width: 1280px;
+  height: 500px;
   margin: 0 auto;
   display: flex;
+  color: var(--light);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 main.showcase .showcase-grid .text-info {
   margin-left: 100px;
@@ -135,6 +151,47 @@ main.showcase .showcase-grid .text-info {
 main.showcase .showcase-grid .text-info p {
   padding-top: 30px;
   max-width: 400px;
+  line-height: 2;
+}
+/* keyframes */
+main.showcase .showcase-grid .logo img {
+  animation: sliding 2s ease;
+}
+@keyframes sliding {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+main.showcase .showcase-grid .text-info h1 {
+  animation: droping 2.8s ease;
+}
+@keyframes droping {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+main.showcase .showcase-grid .text-info p {
+  animation: drop 1.5s ease;
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 /* firma boxes */
 .boxes {
