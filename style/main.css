@@ -14,7 +14,7 @@ html {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: #fff;
+  background: var(--primary);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -62,7 +62,7 @@ ul,
 }
 /* navigation */
 header {
-  background: var(--primary);
+  background: #d7f6fa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +102,7 @@ header ul li a:hover {
   max-width: 1440px;
 }
 .grid-items .grid-item {
-  background-color: #ebebeb;
+  background-color: #d7f6fa;
 }
 .grid-items .grid-item .text-grid {
   padding: 10px 10px;
@@ -118,7 +118,7 @@ header ul li a:hover {
 
 /* showcase info firm */
 .showcase {
-  background: var(--primary);
+  background: #d7f6fa;
   height: 400px;
   display: flex;
   align-items: center;
@@ -147,7 +147,7 @@ main.showcase .showcase-grid .text-info p {
 }
 
 .box {
-  background: var(--primary);
+  background: #d7f6fa;
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: inset 0 0 10px #000000;
