@@ -160,7 +160,7 @@ main.showcase .showcase-grid .logo img {
 @keyframes sliding {
   0% {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-550px);
   }
   100% {
     opacity: 1;
@@ -173,7 +173,7 @@ main.showcase .showcase-grid .text-info h1 {
 @keyframes droping {
   0% {
     opacity: 0;
-    transform: translateY(-150px);
+    transform: translateY(-250px);
   }
   100% {
     opacity: 1;
@@ -181,12 +181,12 @@ main.showcase .showcase-grid .text-info h1 {
   }
 }
 main.showcase .showcase-grid .text-info p {
-  animation: drop 1.5s ease;
+  animation: drop 2s ease;
 }
 @keyframes drop {
   0% {
     opacity: 0;
-    transform: translateY(-80px);
+    transform: translateY(-180px);
   }
   100% {
     opacity: 1;
