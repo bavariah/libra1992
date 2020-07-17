@@ -118,7 +118,7 @@ main.wrapper {
 }
 
 .wrapper .banner {
-  background: url(/img/bulb.jpg) center;
+  background: url(../img/bulb.jpg) center;
   height: 500px;
 }
 /* container grid*/
