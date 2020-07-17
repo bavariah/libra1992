@@ -14,7 +14,7 @@ html {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: var(--primary);
+  background: #f06ed6;
   font-size: 16px;
   line-height: 1.5;
 }
