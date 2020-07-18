@@ -27,7 +27,7 @@ a {
   color: #f06ed6;
   cursor: pointer;
   position: absolute;
-  top: 50px;
+  top: 35px;
   right: 30px;
   z-index: 3;
   display: none;
@@ -76,8 +76,8 @@ header {
 }
 header .head-logo img {
   width: 100%;
-  max-height: 100px;
-  max-width: 220px;
+  max-height: 80px;
+  max-width: 200px;
 }
 header ul {
   padding-left: 50px;
@@ -355,6 +355,9 @@ main.showcase .showcase-grid .text-info p {
   /* header {
     margin: 0 0 50px 0;
   } */
+  header {
+    height: 100px;
+  }
   header ul.main-menu {
     display: block;
     position: absolute;
