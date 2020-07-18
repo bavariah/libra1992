@@ -326,7 +326,9 @@ main.showcase .showcase-grid .text-info p {
     width: 100%;
     height: auto;
   }
-
+  main.showcase {
+    height: 600px;
+  }
   main.showcase .showcase-grid {
     flex-direction: column;
     margin: 50px 50px;
@@ -421,6 +423,7 @@ main.showcase .showcase-grid .text-info p {
   }
   main.showcase {
     flex-direction: column;
+    height: 400px;
     /* margin: 0 30px 0; */
   }
   main.showcase .showcase-grid {
