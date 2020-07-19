@@ -170,7 +170,7 @@ header ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
-  margin: 200px auto;
+  margin: 200px auto 100px;
   max-width: 1440px;
 }
 /* .grid-items .grid-item {
@@ -390,14 +390,13 @@ main.showcase .showcase-grid .text-info p {
   .footer-top .overlay h4 {
     border-bottom: none;
   }
-
   .grid-items {
-    margin: 50px 30px;
+    margin: 50px 30px 30px;
   }
-  .grid-items .photo {
+  /* .grid-items .photo {
     width: 100%;
     height: auto;
-  }
+  } */
   main.showcase {
     height: 600px;
   }
