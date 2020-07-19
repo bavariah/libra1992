@@ -197,7 +197,7 @@ header ul li a:hover {
   transition: 0.3s linear;
 }
 .post-content {
-  background-color: #ffffffdd;
+  background-color: #d7f6fadd;
   margin: 0 20px;
   padding: 30px;
   border-radius: 6px;
@@ -325,8 +325,8 @@ main.showcase .showcase-grid .text-info p {
 }
 /* footer */
 .footer-top {
-  background-color: #007888;
-  color: #fff;
+  background-color: #d7f6fa;
+  color: var(--dark);
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -353,7 +353,7 @@ main.showcase .showcase-grid .text-info p {
   display: inline-block;
   padding-top: 30px;
   padding-bottom: 10px;
-  border-bottom: 2px dotted pink;
+  border-bottom: 3px solid #f06ed6;
 }
 .footer-top .overlay .contact {
   padding-top: 30px;
@@ -363,12 +363,12 @@ main.showcase .showcase-grid .text-info p {
   padding-top: 10px;
 }
 .footer-bottom {
-  background-color: #016370;
-  color: #fff;
+  background-color: #d7f6fa;
+  color: var(--dark);
   text-align: center;
 }
 .footer-bottom a {
-  color: #fff;
+  color: var(--dark);
 }
 
 @media (max-width: 1280px) {
@@ -384,8 +384,8 @@ main.showcase .showcase-grid .text-info p {
   }
   .footer-top .overlay .info-site {
     text-align: center;
-    border-top: 1px solid #c9c8c8;
-    border-bottom: 1px solid #c9c8c8;
+    border-top: 1px solid #f06ed6;
+    border-bottom: 1px solid #f06ed6;
   }
   .footer-top .overlay h4 {
     border-bottom: none;
