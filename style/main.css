@@ -170,6 +170,8 @@ header ul li a:hover {
 .grid-items .grid-item .text-grid h2 {
   display: block;
   text-align: center;
+  font-size: 2rem;
+  line-height: 3;
 }
 .grid-items .photo {
   width: 100%;
