@@ -20,19 +20,10 @@ body {
 }
 a {
   cursor: pointer;
-  color: rgb(0, 0, 0);
+  color: #000000;
   text-decoration: none;
 }
-/* menu btn */
-/* .menu-btn {
-  color: #f06ed6;
-  cursor: pointer;
-  position: absolute;
-  top: 35px;
-  right: 30px;
-  z-index: 3;
-  display: none;
-} */
+/* header button */
 header .menu-btn {
   position: absolute;
   top: 10px;
@@ -173,12 +164,6 @@ header ul li a:hover {
   margin: 200px auto 100px;
   max-width: 1440px;
 }
-/* .grid-items .grid-item {
-  background-color: #d7f6fa;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
-} */
 .grid-items .grid-item .text-grid {
   padding: 10px 10px;
 }
@@ -213,7 +198,7 @@ header ul li a:hover {
 /* showcase info firm */
 .showcase {
   position: relative;
-  background: url(../img/darkness.jpg) no-repeat center center/cover;
+  background: url(../img/graham.jpg) no-repeat center center/cover;
   height: 500px;
   display: flex;
   align-items: center;
@@ -232,13 +217,20 @@ main.showcase .showcase-grid {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.7);
 }
+main.showcase .showcase-grid .logo {
+  margin-right: 100px;
+}
 main.showcase .showcase-grid .text-info {
   margin-left: 100px;
 }
+main.showcase .showcase-grid .text-info h1 {
+  font-size: 3rem;
+}
 main.showcase .showcase-grid .text-info p {
   padding-top: 30px;
-  max-width: 400px;
+  max-width: 450px;
   line-height: 2;
+  font-size: 1.3rem;
 }
 /* keyframes */
 header .head-logo img {
@@ -327,14 +319,14 @@ main.showcase .showcase-grid .text-info p {
 .footer-top {
   background-color: #d7f6fa;
   color: var(--dark);
-  height: 350px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .footer-top .overlay {
-  max-width: 1280px;
+  max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -345,9 +337,13 @@ main.showcase .showcase-grid .text-info p {
   justify-content: center;
   align-items: center;
 }
+.footer-top .overlay .info-site {
+  padding-right: 100px;
+}
 .footer-top .overlay .forma img {
   width: 100%;
-  height: 240px;
+  max-width: 350px;
+  height: 210px;
 }
 .footer-top .overlay h4 {
   display: inline-block;
@@ -393,10 +389,6 @@ main.showcase .showcase-grid .text-info p {
   .grid-items {
     margin: 50px 30px 30px;
   }
-  /* .grid-items .photo {
-    width: 100%;
-    height: auto;
-  } */
   main.showcase {
     height: 600px;
   }
@@ -418,7 +410,6 @@ main.showcase .showcase-grid .text-info p {
     align-items: center;
   }
 }
-
 @media (max-width: 740px) {
   header .menu-btn {
     display: block;
@@ -426,9 +417,6 @@ main.showcase .showcase-grid .text-info p {
   .hide-ms {
     display: none;
   }
-  /* header {
-    margin: 0 0 50px 0;
-  } */
   header {
     height: 100px;
   }
@@ -528,6 +516,7 @@ main.showcase .showcase-grid .text-info p {
     font-size: 0.9rem;
   }
   .footer-top {
+    flex-direction: column;
     margin-top: 50px;
   }
   .footer-top .overlay .info-site ul {
