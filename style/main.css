@@ -302,6 +302,10 @@ main.showcase .showcase-grid .text-info p {
 .box:hover {
   transform: scale(1.06);
 }
+.boxes .box h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
 .yell:hover {
   /* background-color: #dbdb34; */
   background-color: #d7f6fa;
