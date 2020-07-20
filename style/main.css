@@ -366,6 +366,21 @@ main.showcase .showcase-grid .text-info p {
 .footer-bottom a {
   color: var(--dark);
 }
+.footer-top .overlay .mapa iframe.resp-frame {
+  padding-top: 10px;
+}
+@media (max-width: 1250px) {
+  .footer-top .overlay .mapa iframe.resp-frame {
+    padding-top: 20px;
+  }
+  .footer-top {
+    height: auto;
+  }
+  .footer-top .overlay .forma img {
+    max-width: 330px;
+    height: 190px;
+  }
+}
 @media (max-width: 1090px) {
   main.showcase .showcase-grid .text-info h1 {
     font-size: 2.3rem;
@@ -381,9 +396,6 @@ main.showcase .showcase-grid .text-info p {
   }
 }
 @media (max-width: 960px) {
-  .footer-top {
-    height: auto;
-  }
   .footer-top .overlay {
     grid-template-columns: 1fr;
     padding-top: 50px;
