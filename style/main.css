@@ -608,8 +608,8 @@ main.showcase .showcase-grid .text-info p {
     width: 100%;
     text-transform: uppercase;
     text-align: center;
-    background-color: rgba(95, 95, 95, 0.6);
-    transition: 0.3s ease-in-out;
+    background-color: rgba(95, 95, 95, 0.7);
+    transition: 0.4s ease-in-out;
   }
   .text:hover {
     background-color: rgba(0, 0, 0, 0.9);
