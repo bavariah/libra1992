@@ -441,7 +441,7 @@ main.showcase .showcase-grid .text-info p {
     align-items: center;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   header .menu-btn {
     display: block;
   }
@@ -666,7 +666,7 @@ main.showcase .showcase-grid .text-info p {
     }
   }
 }
-@media (min-width: 741px) {
+@media (min-width: 769px) {
   .hide-ds {
     display: none;
   }
