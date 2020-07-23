@@ -299,7 +299,7 @@ main.wrapper {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   header .menu-btn {
     display: block;
   }
@@ -488,7 +488,7 @@ main.wrapper {
     }
   }
 }
-@media (min-width: 741px) {
+@media (min-width: 769px) {
   .hide-ds {
     display: none;
   }
