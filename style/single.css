@@ -326,8 +326,8 @@ main.wrapper {
 /* flip card */
 .wrapper .blog-post .grid-article .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 250px;
+  width: 350px;
+  height: 300px;
   perspective: 1000px;
 }
 
@@ -366,8 +366,8 @@ main.wrapper {
   img {
   width: 100%;
   max-width: 400px;
-  width: 300px;
-  height: 250px;
+  width: 350px;
+  height: 300px;
 }
 .wrapper .blog-post .grid-article .flip-card-front {
   background-color: #bbb;
@@ -380,7 +380,7 @@ main.wrapper {
   transform: rotateY(180deg);
 }
 .wrapper .blog-post .grid-article .flip-card-back ul li {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 /* end flip card */
 /* footer */
@@ -547,6 +547,9 @@ main.wrapper {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 20px;
+  }
+  .wrapper .blog-post .grid-article .grid-img.flip-card {
+    margin: 0 auto;
   }
   .footer-top {
     flex-direction: column;
