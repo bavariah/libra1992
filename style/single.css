@@ -195,6 +195,14 @@ main.wrapper {
 }
 .wrapper .blog-post ul li {
   line-height: 2;
+  padding: 10px;
+  cursor: pointer;
+}
+.wrapper .blog-post ul .one {
+  transition: all 0.4s ease-in-out;
+}
+.wrapper .blog-post ul .one:hover {
+  background-color: #f06ed62a;
 }
 .banner {
   background: url(../img/pink.jpg) no-repeat center center/cover;
@@ -314,6 +322,7 @@ main.wrapper {
   transform: translateY(-80px);
 }
 
+/* end animate list */
 /* flip card */
 .wrapper .blog-post .grid-article .flip-card {
   background-color: transparent;
