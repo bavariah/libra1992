@@ -124,6 +124,7 @@ header .head-logo img {
   max-width: 180px;
 }
 header ul {
+  height: 130px;
   padding-left: 50px;
 }
 header ul,
@@ -137,6 +138,7 @@ header .links .la-instagram {
   padding-left: 10px;
 }
 header ul li {
+  height: inherit;
   text-align: center;
   margin-left: 20px;
   /* border-radius: 50px; */
@@ -145,19 +147,14 @@ header ul li a {
   display: block;
   min-width: 125px;
   text-align: center;
-  line-height: 50px;
-  /* padding-top: 35px; */
-  /* border: 1px solid #f06ed6; */
-  /* border-radius: 50px; */
+  line-height: 130px;
   text-transform: uppercase;
   font-weight: bold;
-  /* transition: 0.5s ease-in-out; */
+  transition: 0.5s ease-in-out;
 }
 header ul li a:hover {
   opacity: 0.9;
-  /* border-bottom: 1px solid #f06ed6; */
-  /* background: #f06ed6; */
-  /* opacity: 0.9; */
+  background: #f06ed6;
 }
 /* blog */
 
@@ -167,7 +164,7 @@ main.wrapper {
   padding: 100px 0px;
 }
 .wrapper .blog-post {
-  background-color: var(--light);
+  background-color: #f7f7f7;
   color: var(--dark);
   box-shadow: var(--light-shadow);
   max-width: 1120px;
@@ -185,13 +182,16 @@ main.wrapper {
   font-size: 1.2rem;
   padding: 50px 0px;
 }
-
 .wrapper .blog-post span {
   color: #f06ed6;
   font-size: 1.2rem;
 }
 .wrapper .blog-post ul {
   padding: 10px 20px;
+}
+.wrapper .blog-post ul li:first-child {
+  padding-bottom: 10px;
+  font-size: 2rem;
 }
 .wrapper .blog-post ul li {
   line-height: 2;
@@ -487,7 +487,7 @@ main.wrapper {
     height: 100%;
     border-right: #ccc 1px solid;
     opacity: 0.95;
-    padding: 30px;
+    padding: 100px 0 0 0;
     transform: translateX(-500px);
     transition: transform 0.6s ease-in-out;
   }
@@ -495,21 +495,18 @@ main.wrapper {
     transform: translateX(-20px);
   }
   header ul.main-menu li {
-    padding: 10px;
+    padding: 0px;
     font-size: 14px;
     text-align: center;
     margin-left: 0;
     border-radius: 5px;
+    height: 100px;
   }
-  header ul li a {
-    display: block;
-    min-width: 105px;
-    border: 1px solid #f06ed6;
-    border-radius: 50px;
+  header ul.main-menu li a {
+    line-height: 100px;
+    text-align: center;
   }
-  header ul.main-menu li:last-child {
-    border-bottom: 0;
-  }
+
   .wrapper .banner {
     height: 200px;
   }
