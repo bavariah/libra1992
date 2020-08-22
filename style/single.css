@@ -152,9 +152,25 @@ header ul li a {
   font-weight: bold;
   transition: 0.5s ease-in-out;
 }
-header ul li a:hover {
+header ul li a.red:hover {
   opacity: 0.9;
-  background: #f06ed6;
+  background: #9932cc;
+}
+header ul li a.pink:hover {
+  opacity: 0.9;
+  background: #008b8b;
+}
+header ul li a.blue:hover {
+  opacity: 0.9;
+  background: #ff1493;
+}
+header ul li a.green:hover {
+  opacity: 0.9;
+  background: #228b22;
+}
+header ul li a.yellow:hover {
+  opacity: 0.9;
+  background: #ff8c00;
 }
 /* blog */
 
@@ -196,7 +212,6 @@ main.wrapper {
 .wrapper .blog-post ul li {
   line-height: 2;
   padding: 10px;
-  cursor: pointer;
 }
 .wrapper .blog-post ul .one {
   transition: all 0.4s ease-in-out;
