@@ -320,7 +320,7 @@ main.wrapper {
   background: #d7f6fa;
   border-radius: 0.5rem;
   width: 90vw;
-  height: 40vh;
+  height: 45vh;
   max-width: 960px;
   text-align: center;
   display: grid;
@@ -348,6 +348,9 @@ main.wrapper {
 .form-module {
   margin: 10px 20px;
 }
+.form-module h4 {
+  font-size: 0.9rem;
+}
 .img-modal img {
   width: 300px;
   height: auto;
@@ -355,6 +358,9 @@ main.wrapper {
 .form-group {
   padding-top: 10px;
   margin-top: 10px;
+}
+.form-group label {
+  font-size: 0.9rem;
 }
 input[type="text"],
 input[type="email"] {
