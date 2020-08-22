@@ -53,3 +53,16 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+const modalBtns = document.querySelectorAll(".btn-upit");
+const closeBtn = document.querySelector(".modal-close");
+const modalOverlay = document.querySelector(".modal-overlay");
+
+modalBtns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    modalOverlay.classList.add("open-modal");
+  });
+});
+
+closeBtn.addEventListener("click", function () {
+  modalOverlay.classList.remove("open-modal");
+});
