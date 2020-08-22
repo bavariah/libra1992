@@ -320,16 +320,14 @@ main.wrapper {
   background: #d7f6fa;
   border-radius: 0.5rem;
   width: 90vw;
-  height: 30vh;
-  max-width: 1170px;
+  height: 40vh;
+  max-width: 960px;
   text-align: center;
   display: grid;
   place-items: center;
+  grid-template-columns: 1fr 1fr;
   position: relative;
 }
-/* animations */
-
-/* keyframe */
 .modal-close {
   position: absolute;
   top: 1rem;
@@ -346,6 +344,36 @@ main.wrapper {
   transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
+}
+.form-module {
+  margin: 10px 20px;
+}
+.img-modal img {
+  width: 300px;
+  height: auto;
+}
+.form-group {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type="submit"] {
+  background-color: #f06ed6;
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* modal end */
 /* container grid*/
@@ -544,6 +572,10 @@ main.wrapper {
 }
 
 @media (max-width: 768px) {
+  .modal-container {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
   header .menu-btn {
     display: block;
   }
