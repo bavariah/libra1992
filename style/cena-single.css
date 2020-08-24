@@ -231,6 +231,23 @@ main.wrapper {
   display: block;
 }
 .banner .linear-head h1 {
+  animation: rotation 1.4s linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-60deg);
+  }
+  60% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(0px);
+  }
+}
+.banner .linear-head h1 {
   font-size: 4rem;
   padding-bottom: 5px;
   line-height: 1.2;
