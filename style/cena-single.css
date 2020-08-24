@@ -247,13 +247,25 @@ main.wrapper {
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper .blog-post h2 {
+  display: inline-block;
+  border-left: 5px solid green;
+  border-bottom: 3px solid green;
+  margin: 10px 20px 30px;
+  padding: 10px;
+}
 .wrapper .blog-post .container {
   display: grid;
+  grid-row-gap: 10px;
   grid-template-rows: auto;
   grid-template-columns: 50px auto 100px;
 }
 .wrapper .blog-post .container .container-item {
   border: 1px solid red;
+  padding: 10px;
+}
+.wrapper .blog-post .container .container-item.cena {
+  text-align: center;
 }
 /* modal */
 .modal-overlay {
