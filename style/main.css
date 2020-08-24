@@ -141,20 +141,39 @@ header ul li {
   margin-left: 20px;
   border-radius: 50px;
 }
+header ul li {
+  height: inherit;
+  text-align: center;
+  margin-left: 20px;
+}
 header ul li a {
   display: block;
   min-width: 125px;
-  height: 90px;
-  padding-top: 35px;
-  border: 1px solid #f06ed6;
-  border-radius: 50px;
+  text-align: center;
+  line-height: 130px;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.5s ease-in-out;
 }
-header ul li a:hover {
-  background: #f06ed6;
+header ul li a.red:hover {
   opacity: 0.9;
+  background: #9932cc;
+}
+header ul li a.pink:hover {
+  opacity: 0.9;
+  background: #008b8b;
+}
+header ul li a.blue:hover {
+  opacity: 0.9;
+  background: #ff1493;
+}
+header ul li a.green:hover {
+  opacity: 0.9;
+  background: #228b22;
+}
+header ul li a.yellow:hover {
+  opacity: 0.9;
+  background: #ff8c00;
 }
 /* container grid*/
 .grid-items {
@@ -500,7 +519,7 @@ main.showcase .showcase-grid .text-info p {
   }
   header ul.main-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 5;
     top: 0;
     left: 0;
@@ -509,7 +528,7 @@ main.showcase .showcase-grid .text-info p {
     height: 100%;
     border-right: #ccc 1px solid;
     opacity: 0.95;
-    padding: 30px;
+    padding: 100px 0 0 0;
     transform: translateX(-500px);
     transition: transform 0.6s ease-in-out;
   }
@@ -517,22 +536,16 @@ main.showcase .showcase-grid .text-info p {
     transform: translateX(-20px);
   }
   header ul.main-menu li {
-    padding: 10px;
+    padding: 0px;
     font-size: 14px;
     text-align: center;
     margin-left: 0;
     border-radius: 5px;
+    height: 100px;
   }
-  header ul li a {
-    display: block;
-    min-width: 105px;
-    height: 50px;
-    padding-top: 15px;
-    border: 1px solid #f06ed6;
-    border-radius: 50px;
-  }
-  header ul.main-menu li:last-child {
-    border-bottom: 0;
+  header ul.main-menu li a {
+    line-height: 100px;
+    text-align: center;
   }
   .cta-bars {
     bottom: 50%;
