@@ -230,15 +230,15 @@ main.wrapper {
 .banner .linear-head {
   display: block;
 }
-.banner .linear-head {
-  animation: fading 1.4s linear;
+.banner .linear-head h1 {
+  animation: rotation 1.2s linear;
 }
-@keyframes fading {
-  0% {
-    opacity: 0;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-    opacity: 1;
+  to {
+    transform: rotate(359deg);
   }
 }
 .banner .linear-head h1 {
