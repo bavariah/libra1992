@@ -212,11 +212,12 @@ main.wrapper {
   line-height: 2;
   padding: 10px;
 }
-.wrapper .blog-post ul .one {
-  transition: all 0.4s ease-in-out;
+.wrapper .blog-post ul li.one {
+  transition: background-color 0.4s linear;
 }
-.wrapper .blog-post ul .one:hover {
+.wrapper .blog-post ul li.one:hover {
   background-color: #f06ed62a;
+  border-right: 3px solid #f06ed6;
 }
 .banner {
   background: url(../img/pink.jpg) no-repeat center center/cover;
@@ -402,7 +403,6 @@ input[type="submit"] {
   width: 100%;
   height: 250px;
 }
-/* proba */
 .post-image {
   width: 100%;
   border-radius: 6px;
