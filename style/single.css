@@ -488,7 +488,7 @@ input[type="submit"] {
 .footer-top {
   background-color: #d7f6fa;
   color: var(--dark);
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -498,7 +498,7 @@ input[type="submit"] {
   max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
   margin: 0 auto;
 }
 .footer-top .overlay .forma {
@@ -530,6 +530,7 @@ input[type="submit"] {
 .footer-bottom {
   background-color: #d7f6fa;
   color: var(--dark);
+  padding: 10px 5px;
   text-align: center;
 }
 .footer-bottom a {
