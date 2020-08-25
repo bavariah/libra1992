@@ -277,13 +277,14 @@ main.wrapper {
   grid-row-gap: 10px;
   grid-column-gap: 5px;
   grid-template-rows: auto;
-  grid-template-columns: 50px auto 100px;
+  grid-template-columns: 50px auto 150px;
 }
 .wrapper .blog-post .container .container-item {
   padding: 10px;
 }
 .wrapper .blog-post .container .container-item.cena {
   text-align: center;
+  font-weight: bold;
   border: #f06ed6 2px solid;
 }
 .wrapper .blog-post .container .container-item.text {
