@@ -197,7 +197,7 @@ main.wrapper {
   font-size: 1.2rem;
   padding: 50px 0px;
 }
-.wrapper .blog-post span {
+.wrapper .blog-post .grid-item span {
   color: #f06ed6;
   font-size: 1.2rem;
 }
@@ -220,8 +220,8 @@ main.wrapper {
   border-right: 3px solid #f06ed6;
 }
 .banner {
-  background: url(../img/pink.jpg) no-repeat center center/cover;
-  height: 400px;
+  background: url(../img/modern.jpg) no-repeat center center/cover fixed;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,12 +251,18 @@ main.wrapper {
     1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgb(215, 246, 250, 0.2),
     1px 25px 35px rgb(215, 246, 250, 0.2), 1px 30px 60px rgb(215, 246, 250, 0.2);
 }
-.banner .liner {
+.wrapper .blog-post .liner {
   height: 5px;
-  background-color: #d7f6fa;
+  background-color: #f06ed6;
   width: 105px;
-  margin-left: auto;
   margin-right: auto;
+  transition: 0.5s linear;
+}
+.wrapper .blog-post:hover .liner {
+  width: 100%;
+}
+.wrapper .blog-post:hover p span {
+  color: #f06ed6;
 }
 .wrapper .blog-post .grid-article {
   display: grid;
