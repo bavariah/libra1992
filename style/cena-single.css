@@ -238,10 +238,10 @@ main.wrapper {
     transform: rotate(0deg);
   }
   30% {
-    transform: rotate(-60deg);
+    transform: rotate(-40deg);
   }
   60% {
-    transform: rotate(60deg);
+    transform: rotate(40deg);
   }
   100% {
     transform: rotate(0px);
