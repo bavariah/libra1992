@@ -54,7 +54,7 @@ menuBtn.addEventListener("click", () => {
   }
 });
 const modalBtns = document.querySelectorAll(".btn-upit");
-const closeBtn = document.querySelector(".modal-close");
+const closeBtns = document.querySelectorAll(".modal-close");
 const modalOverlay = document.querySelector(".modal-overlay");
 
 modalBtns.forEach(function (btn) {
@@ -62,7 +62,8 @@ modalBtns.forEach(function (btn) {
     modalOverlay.classList.add("open-modal");
   });
 });
-
-closeBtn.addEventListener("click", function () {
-  modalOverlay.classList.remove("open-modal");
+closeBtns.forEach(function (close) {
+  close.addEventListener("click", function (e) {
+    modalOverlay.classList.remove("open-modal");
+  });
 });
