@@ -192,7 +192,7 @@ main.wrapper {
   line-height: 1.2;
   text-transform: uppercase;
 }
-.wrapper .blog-post p {
+/* .wrapper .blog-post p {
   line-height: 1.5;
   font-size: 1.2rem;
   padding: 50px 0px;
@@ -200,8 +200,8 @@ main.wrapper {
 .wrapper .blog-post span {
   color: #f06ed6;
   font-size: 1.2rem;
-}
-.wrapper .blog-post ul {
+} */
+/* .wrapper .blog-post ul {
   padding: 10px 20px;
 }
 .wrapper .blog-post ul li:first-child {
@@ -218,7 +218,7 @@ main.wrapper {
 .wrapper .blog-post ul li.one:hover {
   background-color: #f06ed62a;
   border-right: 3px solid #f06ed6;
-}
+} */
 .banner {
   background: url(../img/jimmy.jpg) no-repeat center center/cover fixed;
   min-height: 600px;
@@ -271,6 +271,7 @@ main.wrapper {
   margin: 10px 20px 30px;
   padding: 10px;
 }
+/* cenovnik grid */
 .wrapper .blog-post .container {
   display: grid;
   grid-row-gap: 10px;
@@ -283,6 +284,19 @@ main.wrapper {
 }
 .wrapper .blog-post .container .container-item.cena {
   text-align: center;
+}
+/* fillup try */
+.wrapper .blog-post .container .fillup {
+  position: relative;
+  padding: 0px;
+  display: flex;
+}
+.wrapper .blog-post .container .fillup .middle {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: #f06ed6;
 }
 /* modal */
 .modal-overlay {
