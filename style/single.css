@@ -444,8 +444,8 @@ input[type="submit"] {
 /* flip card */
 .wrapper .blog-post .grid-article .flip-card {
   background-color: transparent;
-  width: 350px;
-  height: 300px;
+  width: 450px;
+  height: 400px;
   perspective: 1000px;
 }
 
@@ -483,9 +483,8 @@ input[type="submit"] {
   .flip-card-front
   img {
   width: 100%;
-  max-width: 400px;
-  width: 350px;
-  height: 300px;
+  width: 450px;
+  height: 400px;
 }
 .wrapper .blog-post .grid-article .flip-card-front {
   background-color: #bbb;
@@ -498,7 +497,7 @@ input[type="submit"] {
   transform: rotateY(180deg);
 }
 .wrapper .blog-post .grid-article .flip-card-back ul li {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 /* end flip card */
 /* footer */
