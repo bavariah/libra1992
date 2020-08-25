@@ -330,6 +330,7 @@ main.wrapper {
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .luigi {
   position: absolute;
@@ -343,7 +344,7 @@ main.wrapper {
 }
 @keyframes drive {
   from {
-    transform: translateX(-20px);
+    transform: translateX(-200px);
   }
   to {
     transform: translateX(1200px);
