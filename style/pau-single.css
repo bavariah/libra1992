@@ -322,6 +322,33 @@ main.wrapper {
   position: absolute;
   top: 65%;
 }
+.mario {
+  position: absolute;
+  top: -55px;
+  left: 0px;
+  animation-name: drive;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.luigi {
+  position: absolute;
+  top: 135px;
+  left: 0px;
+  z-index: 1;
+  animation-name: drive;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes drive {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(1200px);
+  }
+}
 /* end */
 @keyframes bounce {
   0% {
