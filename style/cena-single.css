@@ -198,36 +198,9 @@ main.wrapper {
   font-size: 1.2rem;
   padding: 50px 0px;
 }
-/* .wrapper .blog-post p {
-  line-height: 1.5;
-  font-size: 1.2rem;
-  padding: 50px 0px;
-}
-.wrapper .blog-post span {
-  color: #f06ed6;
-  font-size: 1.2rem;
-} */
-/* .wrapper .blog-post ul {
-  padding: 10px 20px;
-}
-.wrapper .blog-post ul li:first-child {
-  padding-bottom: 10px;
-  font-size: 2rem;
-}
-.wrapper .blog-post ul li {
-  line-height: 2;
-  padding: 10px;
-}
-.wrapper .blog-post ul li.one {
-  transition: background-color 0.4s linear;
-}
-.wrapper .blog-post ul li.one:hover {
-  background-color: #f06ed62a;
-  border-right: 3px solid #f06ed6;
-} */
 .banner {
   background: url(../img/jimmy.jpg) no-repeat center center/cover fixed;
-  min-height: 600px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -589,9 +562,16 @@ input[type="submit"] {
     line-height: 100px;
     text-align: center;
   }
+  .banner {
+    background-attachment: scroll;
+    height: 300px;
+  }
   .banner .linear-head h1 {
-    font-size: 2.7rem;
-    line-height: 1.1;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  .banner .liner {
+    display: none;
   }
   .wrapper .blog-post h2 {
     display: inline-block;

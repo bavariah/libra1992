@@ -638,11 +638,12 @@ input[type="submit"] {
     text-align: center;
   }
   .banner .linear-head h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.1;
   }
-  .wrapper .banner {
-    height: 200px;
+  .banner {
+    background-attachment: scroll;
+    height: 300px;
   }
   .cta-bars {
     bottom: 50%;
