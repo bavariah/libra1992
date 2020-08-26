@@ -307,23 +307,36 @@ main.showcase .showcase-grid .text-info p {
   background: rgb(240, 110, 214, 0.5);
   display: grid;
   place-items: center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   visibility: hidden;
   z-index: -10;
 }
 .open-modal {
   visibility: visible;
   z-index: 10;
+  animation: show 0.3s;
+  transform: scale(1);
+}
+@keyframes show {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .modal-container {
   background: #d7f6fa;
   border-radius: 0.5rem;
   width: 90vw;
-  height: 30vh;
-  max-width: 1170px;
+  height: 45vh;
+  max-width: 960px;
   text-align: center;
   display: grid;
   place-items: center;
+  grid-template-columns: 1fr 1fr;
   position: relative;
 }
 .modal-close {
@@ -335,13 +348,49 @@ main.showcase .showcase-grid .text-info p {
   border-color: transparent;
   color: #f06ed6;
   cursor: pointer;
-  transition: all 0.6s linear;
+  transition: all 0.3s linear;
 }
 .modal-close:hover {
   color: #f147cf;
   transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
+}
+.form-module {
+  margin: 10px 20px;
+}
+.form-module h4 {
+  font-size: 0.9rem;
+}
+.img-modal img {
+  width: 300px;
+  height: auto;
+}
+.form-group {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.form-group label {
+  font-size: 0.9rem;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type="submit"] {
+  background-color: #f06ed6;
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* modal end */
 /* firma boxes */
