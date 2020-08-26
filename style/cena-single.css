@@ -203,7 +203,10 @@ main.wrapper {
   display: block;
 }
 .banner .linear-head h1 {
-  animation: rotation 1.4s linear;
+  -webkit-animation: rotation 1.4s linear; /* Safari 4+ */
+  -moz-animation: rotation 1.4s linear; /* Fx 5+ */
+  -o-animation: rotation 1.4s linear; /* Opera 12+ */
+  animation: rotation 1.4s linear; /* IE 10+, Fx 29+ */
 }
 @keyframes rotation {
   0% {
