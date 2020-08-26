@@ -179,7 +179,6 @@ header ul li a.yellow:hover {
 .grid-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  /* width: 95vw; */
   grid-gap: 20px;
   padding: 0 30px;
   margin: 200px auto 100px;

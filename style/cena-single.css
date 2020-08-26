@@ -396,8 +396,9 @@ input[type="submit"] {
 /* container grid*/
 .grid-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 20px;
+  padding: 0 30px;
   margin: 200px auto 100px;
   max-width: 1440px;
 }
@@ -503,6 +504,9 @@ input[type="submit"] {
   }
 }
 @media (max-width: 960px) {
+  .banner .linear-head h1 {
+    font-size: 3.5rem;
+  }
   .footer-top .overlay {
     grid-template-columns: 1fr;
     padding-top: 50px;
@@ -518,13 +522,8 @@ input[type="submit"] {
   .footer-top .overlay h4 {
     border-bottom: none;
   }
-
   .grid-items {
-    margin: 50px 30px;
-  }
-  .grid-items .photo {
-    width: 100%;
-    height: auto;
+    margin: 50px 30px 30px;
   }
 }
 
@@ -600,7 +599,7 @@ input[type="submit"] {
   }
   .wrapper .blog-post .container .container-item.cena {
     margin: auto;
-    width: 80px;
+    width: 100px;
     text-align: center;
     font-size: 0.9rem;
     padding: 5px;

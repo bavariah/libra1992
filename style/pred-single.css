@@ -414,8 +414,9 @@ input[type="submit"] {
 /* container grid*/
 .grid-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 20px;
+  padding: 0 30px;
   margin: 200px auto 100px;
   max-width: 1440px;
 }
@@ -595,13 +596,8 @@ input[type="submit"] {
   .footer-top .overlay h4 {
     border-bottom: none;
   }
-
   .grid-items {
-    margin: 50px 30px;
-  }
-  .grid-items .photo {
-    width: 100%;
-    height: auto;
+    margin: 50px 30px 30px;
   }
   main.wrapper {
     margin-bottom: 100px;
