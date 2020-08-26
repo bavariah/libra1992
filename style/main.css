@@ -622,8 +622,7 @@ input[type="submit"] {
   }
   main.showcase {
     flex-direction: column;
-    height: 400px;
-    /* margin: 0 30px 0; */
+    height: 500px;
   }
   main.showcase .showcase-grid {
     margin: 0;

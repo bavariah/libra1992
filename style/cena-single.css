@@ -590,7 +590,7 @@ input[type="submit"] {
   .wrapper .blog-post .container .container-item.ponuda {
     background: rgba(240, 110, 214, 0.8);
     padding-left: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 0.8rem;
   }
   .wrapper .blog-post .container .fillup {
