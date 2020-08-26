@@ -271,6 +271,7 @@ main.wrapper {
   text-align: left;
   color: #0c0c0c;
   font-size: 1.1rem;
+  text-transform: uppercase;
   background: linear-gradient(
     90deg,
     rgba(240, 110, 214, 1) 0%,
@@ -602,10 +603,11 @@ input[type="submit"] {
     padding: 5px;
   }
   .wrapper .blog-post .container .container-item.cena {
+    margin: auto;
+    width: 80px;
     text-align: center;
     font-size: 0.8rem;
     padding: 5px;
-    border: none;
   }
   .wrapper .blog-post .container .container-item.ponuda {
     background: rgba(240, 110, 214, 0.8);
