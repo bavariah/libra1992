@@ -261,6 +261,10 @@ main.wrapper {
   padding-right: 45px;
   font-weight: bold;
   border: #f06ed6 2px solid;
+  -webkit-animation: blink 2s infinite; /* Safari 4+ */
+  -moz-animation: blink 2s infinite; /* Fx 5+ */
+  -o-animation: blink 2s infinite; /* Opera 12+ */
+  animation: blink 2s infinite; /* IE 10+, Fx 29+ */
 }
 .wrapper .blog-post .container .container-item.ponuda {
   padding-left: 30px;
