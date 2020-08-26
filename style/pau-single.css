@@ -220,7 +220,7 @@ main.wrapper {
   border-right: 3px solid #f06ed6;
 }
 .banner {
-  background: url(../img/webb.jpg) no-repeat center center/cover fixed;
+  background: url(../img/pausalac.jpg) no-repeat center center/cover fixed;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -719,6 +719,10 @@ input[type="submit"] {
   header ul.main-menu li a {
     line-height: 100px;
     text-align: center;
+  }
+  .wrapper .blog-post p {
+    line-height: 1.5;
+    font-size: 1.1rem;
   }
   .banner .linear-head h1 {
     font-size: 2.7rem;
