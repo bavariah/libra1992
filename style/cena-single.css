@@ -576,7 +576,7 @@ input[type="submit"] {
     height: 300px;
   }
   .banner .linear-head h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.2;
   }
   .banner .liner {
@@ -770,6 +770,10 @@ input[type="submit"] {
   }
 }
 @media (max-width: 375px) {
+  .banner .linear-head h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
   main.showcase .showcase-grid .logo img {
     width: 200px;
     height: auto;
