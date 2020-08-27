@@ -346,7 +346,7 @@ main.wrapper {
   left: 0px;
   z-index: 1;
   animation-name: drive;
-  animation-duration: 2s;
+  animation-duration: 2.2s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }
