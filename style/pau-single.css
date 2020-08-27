@@ -20,6 +20,34 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+/* ====== scroll ===== */
+/* width */
+::-webkit-scrollbar {
+  width: 1.2em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* background */
+::-webkit-scrollbar-track-piece {
+  background: #d7f6fa;
+  width: 22px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--pink);
+  border-radius: 50px;
+  border: 3px solid #d323b0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d323b0;
+}
+/* ====== end scroll ===== */
 a {
   cursor: pointer;
   color: #000000;
@@ -332,7 +360,7 @@ main.wrapper {
   top: -55px;
   left: 0px;
   animation-name: drive;
-  animation-duration: 3s;
+  animation-duration: 2.2s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -632,7 +660,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
   .mario {
-    animation-duration: 4s;
+    animation-duration: 3.5s;
   }
   .luigi {
     animation-duration: 2.3s;
