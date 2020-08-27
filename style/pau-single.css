@@ -346,7 +346,7 @@ main.wrapper {
   left: 0px;
   z-index: 1;
   animation-name: drive;
-  animation-duration: 1.6s;
+  animation-duration: 1.4s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -435,6 +435,7 @@ main.wrapper {
   place-items: center;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  padding: 10px;
 }
 .modal-close {
   position: absolute;
@@ -489,6 +490,9 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+input[type="submit"]:hover {
+  opacity: 0.9;
+}
 /* modal end */
 /* container grid*/
 .grid-items {
@@ -531,68 +535,7 @@ input[type="submit"] {
 .post:hover .post-content {
   transform: translateY(-80px);
 }
-
 /* end animate list */
-/* flip card */
-/* .wrapper .blog-post .grid-article .flip-card {
-  background-color: transparent;
-  width: 350px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.wrapper .blog-post .grid-article .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.wrapper .blog-post .grid-article .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.wrapper .blog-post .grid-article .flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.wrapper .blog-post .grid-article .grid-img.flip-card {
-  position: relative;
-  margin: auto;
-}
-.wrapper
-  .blog-post
-  .grid-article
-  .grid-img
-  .flip-card-inner
-  .flip-card-front
-  img {
-  width: 100%;
-  max-width: 400px;
-  width: 350px;
-  height: 300px;
-}
-.wrapper .blog-post .grid-article .flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.wrapper .blog-post .grid-article .flip-card-back {
-  background-color: var(--pink);
-  color: white;
-  transform: rotateY(180deg);
-}
-.wrapper .blog-post .grid-article .flip-card-back ul li {
-  font-size: 1.5rem;
-} */
-/* end flip card */
 /* footer */
 .footer-top {
   background-color: #d7f6fa;
@@ -694,6 +637,10 @@ input[type="submit"] {
   .modal-container {
     height: auto;
     grid-template-columns: 1fr;
+  }
+  .img-modal img {
+    width: 200px;
+    height: auto;
   }
   header .menu-btn {
     display: block;

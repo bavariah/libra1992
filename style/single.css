@@ -349,6 +349,7 @@ main.wrapper {
   place-items: center;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  padding: 10px;
 }
 .modal-close {
   position: absolute;
@@ -402,6 +403,9 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+input[type="submit"]:hover {
+  opacity: 0.9;
 }
 /* modal end */
 /* ====== container grid ====== */
@@ -623,6 +627,10 @@ input[type="submit"] {
   .modal-container {
     height: auto;
     grid-template-columns: 1fr;
+  }
+  .img-modal img {
+    width: 200px;
+    height: auto;
   }
   header .menu-btn {
     display: block;

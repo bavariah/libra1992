@@ -331,6 +331,7 @@ main.showcase .showcase-grid .text-info p {
 .modal-container {
   background: #d7f6fa;
   border-radius: 0.5rem;
+  padding: 10px;
   width: 90vw;
   height: 45vh;
   max-width: 960px;
@@ -392,6 +393,9 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+input[type="submit"]:hover {
+  opacity: 0.9;
 }
 /* modal end */
 /* firma boxes */
@@ -567,6 +571,14 @@ input[type="submit"] {
   }
 }
 @media (max-width: 768px) {
+  .modal-container {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  .img-modal img {
+    width: 200px;
+    height: auto;
+  }
   header .menu-btn {
     display: block;
   }
