@@ -641,7 +641,7 @@ input[type="submit"] {
     margin: 100px 15px 100px;
   }
   .box {
-    padding: 1.5rem 2rem;
+    padding: 1.3rem 1.8rem;
     font-size: 0.9rem;
     min-height: 200px;
   }
@@ -794,6 +794,9 @@ input[type="submit"] {
   }
 }
 @media (max-width: 375px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
   main.showcase .showcase-grid .logo img {
     width: 200px;
     height: auto;
@@ -806,5 +809,21 @@ input[type="submit"] {
   .menu-btn__burger::after {
     width: 30px;
     height: 3px;
+  }
+}
+@media (max-width: 325px) {
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .box {
+    padding: 1rem 1.4rem;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .boxes .box p {
+    padding-top: 15px;
+  }
+  .boxes .box h3 {
+    font-size: 1.2rem;
   }
 }

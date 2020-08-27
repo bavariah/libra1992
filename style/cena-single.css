@@ -125,7 +125,7 @@ header .head-logo img {
 }
 header ul {
   height: 130px;
-  padding-left: 50px;
+  /* padding-left: 50px; */
 }
 header ul,
 .links {
@@ -507,6 +507,9 @@ input[type="submit"] {
   }
 }
 @media (max-width: 960px) {
+  header .head-logo img {
+    display: none;
+  }
   .banner .linear-head h1 {
     font-size: 3.5rem;
   }
@@ -531,6 +534,9 @@ input[type="submit"] {
 }
 
 @media (max-width: 768px) {
+  header .head-logo img {
+    display: block;
+  }
   .modal-container {
     height: auto;
     grid-template-columns: 1fr;
