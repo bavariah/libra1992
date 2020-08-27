@@ -645,7 +645,7 @@ input[type="submit"]:hover {
   }
   header ul.main-menu {
     display: block;
-    overflow: scroll;
+    /* overflow: scroll; */
     position: fixed;
     z-index: 5;
     top: 0;
@@ -877,5 +877,8 @@ input[type="submit"]:hover {
   .menu-btn__burger::after {
     width: 30px;
     height: 3px;
+  }
+  header ul.main-menu li {
+    height: 80px;
   }
 }
