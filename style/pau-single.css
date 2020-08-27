@@ -337,6 +337,9 @@ main.wrapper {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.road img {
+  height: 120px;
+}
 .luigi {
   position: absolute;
   top: 135px;
