@@ -346,9 +346,10 @@ main.wrapper {
   left: 0px;
   z-index: 1;
   animation-name: drive;
-  animation-duration: 2.2s;
+  animation-duration: 1.6s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @keyframes drive {
   from {
