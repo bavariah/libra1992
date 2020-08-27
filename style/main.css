@@ -541,6 +541,9 @@ input[type="submit"] {
   .grid-items {
     margin: 50px 30px 30px;
   }
+  header ul li a {
+    min-width: 105px;
+  }
   main.showcase {
     height: 600px;
   }
@@ -572,6 +575,7 @@ input[type="submit"] {
   header ul.main-menu {
     display: block;
     position: fixed;
+    overflow: scroll;
     z-index: 5;
     top: 0;
     left: 0;

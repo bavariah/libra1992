@@ -655,6 +655,9 @@ input[type="submit"] {
   header .head-logo img {
     display: none;
   }
+  header ul li a {
+    min-width: 105px;
+  }
   .footer-top .overlay {
     grid-template-columns: 1fr;
     padding-top: 50px;
@@ -695,6 +698,7 @@ input[type="submit"] {
   header ul.main-menu {
     display: block;
     position: fixed;
+    overflow: scroll;
     z-index: 5;
     top: 0;
     left: 0;

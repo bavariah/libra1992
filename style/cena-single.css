@@ -510,6 +510,9 @@ input[type="submit"] {
   header .head-logo img {
     display: none;
   }
+  header ul li a {
+    min-width: 105px;
+  }
   .banner .linear-head h1 {
     font-size: 3.5rem;
   }
@@ -550,6 +553,7 @@ input[type="submit"] {
   header ul.main-menu {
     display: block;
     position: fixed;
+    overflow: scroll;
     z-index: 5;
     top: 0;
     left: 0;
