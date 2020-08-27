@@ -1,4 +1,5 @@
 :root {
+  --pink: #f06ed6;
   --primary: #ddd;
   --dark: #333;
   --light: #fff;
@@ -15,7 +16,7 @@ html {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: #f06ed6;
+  background: var(--pink);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -74,7 +75,7 @@ header .menu-btn__burger {
   left: 20%;
   width: 40px;
   height: 3px;
-  background: #f06ed6;
+  background: var(--pink);
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -84,7 +85,7 @@ header .menu-btn__burger::before,
   position: absolute;
   width: 35px;
   height: 3px;
-  background: #f06ed6;
+  background: var(--pink);
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -150,6 +151,10 @@ header ul li a {
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.5s ease-in-out;
+}
+header ul li a.gold:hover {
+  opacity: 0.9;
+  background: #ffd700;
 }
 header ul li a.red:hover {
   opacity: 0.9;
@@ -263,7 +268,7 @@ main.wrapper {
   text-align: right;
   padding-right: 45px;
   font-weight: bold;
-  border: #f06ed6 2px solid;
+  border: var(--pink) 2px solid;
 }
 .wrapper .blog-post .container .container-item.ponuda {
   padding-left: 30px;
@@ -280,7 +285,7 @@ main.wrapper {
 }
 /* fillup try */
 .wrapper .blog-post .container .fillup {
-  background: #f06ed6;
+  background: var(--pink);
   border-radius: 50%;
   -webkit-animation: blink 2s infinite; /* Safari 4+ */
   -moz-animation: blink 2s infinite; /* Fx 5+ */
@@ -292,7 +297,7 @@ main.wrapper {
   0%,
   49% {
     background-color: #d7f6fa;
-    border: 3px solid #f06ed6;
+    border: 3px solid var(--pink);
   }
   50%,
   100% {
@@ -349,7 +354,7 @@ main.wrapper {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: #f06ed6;
+  color: var(--pink);
   cursor: pointer;
   transition: all 0.3s linear;
 }
@@ -386,7 +391,7 @@ input[type="email"] {
   background: #f1f1f1;
 }
 input[type="submit"] {
-  background-color: #f06ed6;
+  background-color: var(--pink);
   display: block;
   width: 100%;
   color: white;
@@ -473,7 +478,7 @@ input[type="submit"] {
   display: inline-block;
   padding-top: 30px;
   padding-bottom: 10px;
-  border-bottom: 3px solid #f06ed6;
+  border-bottom: 3px solid var(--pink);
 }
 .footer-top .overlay .contact {
   padding-top: 30px;
@@ -525,8 +530,8 @@ input[type="submit"] {
   }
   .footer-top .overlay .info-site {
     text-align: center;
-    border-top: 1px solid #f06ed6;
-    border-bottom: 1px solid #f06ed6;
+    border-top: 1px solid var(--pink);
+    border-bottom: 1px solid var(--pink);
   }
   .footer-top .overlay h4 {
     border-bottom: none;
