@@ -175,6 +175,43 @@ header ul li a.yellow:hover {
   opacity: 0.9;
   background: #ff8c00;
 }
+/* showcase info firm */
+.showcase {
+  position: relative;
+  background: url(../img/libraco.jpg) no-repeat center center/cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.showcase .showcase-grid {
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  color: var(--light);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+main.showcase .showcase-grid .logo {
+  margin-right: 100px;
+}
+main.showcase .showcase-grid .text-info {
+  margin-left: 100px;
+}
+main.showcase .showcase-grid .text-info h1 {
+  font-size: 3rem;
+}
+main.showcase .showcase-grid .text-info p {
+  padding-top: 30px;
+  max-width: 450px;
+  line-height: 2;
+  font-size: 1.3rem;
+}
 /* container grid*/
 .grid-items {
   display: grid;
@@ -216,43 +253,6 @@ header ul li a.yellow:hover {
 }
 .post:hover .post-content {
   transform: translateY(-80px);
-}
-/* showcase info firm */
-.showcase {
-  position: relative;
-  background: url(../img/libraco.jpg) no-repeat center center/cover;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main.showcase .showcase-grid {
-  height: 500px;
-  margin: 0 auto;
-  display: flex;
-  color: var(--light);
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-main.showcase .showcase-grid .logo {
-  margin-right: 100px;
-}
-main.showcase .showcase-grid .text-info {
-  margin-left: 100px;
-}
-main.showcase .showcase-grid .text-info h1 {
-  font-size: 3rem;
-}
-main.showcase .showcase-grid .text-info p {
-  padding-top: 30px;
-  max-width: 450px;
-  line-height: 2;
-  font-size: 1.3rem;
 }
 /* keyframes */
 header .head-logo img {
@@ -625,7 +625,7 @@ input[type="submit"] {
   }
   main.showcase {
     flex-direction: column;
-    height: 500px;
+    min-height: calc(100vh - 100px);
   }
   main.showcase .showcase-grid {
     margin: 0;
