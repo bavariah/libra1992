@@ -24,6 +24,34 @@ a {
   color: #000000;
   text-decoration: none;
 }
+/* ====== scroll ===== */
+/* width */
+::-webkit-scrollbar {
+  width: 1.2em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* background */
+::-webkit-scrollbar-track-piece {
+  background: #d7f6fa;
+  width: 22px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--pink);
+  border-radius: 50px;
+  border: 3px solid #d323b0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d323b0;
+}
+/* ====== end scroll ===== */
 /* header button */
 header .menu-btn {
   position: absolute;
