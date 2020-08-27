@@ -631,6 +631,12 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
+  .mario {
+    animation-duration: 4s;
+  }
+  .luigi {
+    animation-duration: 2.3s;
+  }
   .modal-container {
     height: auto;
     grid-template-columns: 1fr;
