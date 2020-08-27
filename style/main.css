@@ -178,8 +178,8 @@ header ul li a.yellow:hover {
 /* showcase info firm */
 .showcase {
   position: relative;
-  background: url(../img/libraco.jpg) no-repeat center center/cover;
-  height: 500px;
+  background: url(../img/libraco.jpg) no-repeat center center/cover fixed;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -630,6 +630,7 @@ input[type="submit"] {
   main.showcase {
     flex-direction: column;
     min-height: calc(100vh - 100px);
+    background-attachment: scroll;
   }
   main.showcase .showcase-grid {
     margin: 0;
