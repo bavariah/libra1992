@@ -67,3 +67,10 @@ closeBtns.forEach(function (close) {
     modalOverlay.classList.remove("open-modal");
   });
 });
+
+const modalClose = document.getElementById("id01");
+window.onclick = function (event) {
+  if (event.target == modalClose) {
+    modalClose.classList.remove("open-modal");
+  }
+};

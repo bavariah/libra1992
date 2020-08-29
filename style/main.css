@@ -357,6 +357,7 @@ main.showcase .showcase-grid .text-info p {
   }
 }
 .modal-container {
+  z-index: 11;
   background: #d7f6fa;
   border-radius: 0.5rem;
   padding: 10px;
