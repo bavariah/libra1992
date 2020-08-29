@@ -885,4 +885,7 @@ input[type="submit"]:hover {
   .boxes .box h3 {
     font-size: 1.2rem;
   }
+  main.showcase {
+    margin-top: 40px;
+  }
 }
