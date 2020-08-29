@@ -743,6 +743,10 @@ input[type="submit"]:hover {
   .links {
     display: none;
   }
+  .wrapper .blog-post ul {
+    padding: 0px 0px;
+    overflow: hidden;
+  }
   .wrapper .blog-post .grid-article .flip-card {
     width: 300px;
     height: 250px;
@@ -760,6 +764,7 @@ input[type="submit"]:hover {
   }
   .wrapper .blog-post .grid-article .flip-card-back ul li {
     font-size: 1.8rem;
+    line-height: 1.4;
   }
   .wrapper .blog-post ul li.one {
     font-size: 0.9rem;

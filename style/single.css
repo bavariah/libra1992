@@ -756,12 +756,13 @@ input[type="submit"]:hover {
   }
   .wrapper .blog-post .grid-article .flip-card-back ul li {
     font-size: 1.8rem;
+    line-height: 1.4;
   }
   .wrapper .blog-post ul li.one {
     font-size: 0.9rem;
     margin-bottom: 5px;
     background-color: #f06ed62a;
-    border-right: 3px solid #f06ed6;
+    border-right: 3px solid var(--pink);
   }
   .footer-top {
     flex-direction: column;
