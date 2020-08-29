@@ -124,14 +124,14 @@ header .menu-btn__burger::after {
   transform: translateY(16px);
 }
 /* animation */
-header .menu-btn.show .menu-btn__burger {
+header .menu-btn.open .menu-btn__burger {
   transform: translateX(-50px);
   background: transparent;
 }
-header .menu-btn.show .menu-btn__burger::before {
+header .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg) translate(35px, -35px);
 }
-header .menu-btn.show .menu-btn__burger::after {
+header .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 /* ==== navigation ===== */
