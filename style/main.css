@@ -607,6 +607,7 @@ input[type="submit"]:hover {
     position: fixed;
   }
   header {
+    background: #d7f6fa;
     display: block;
     position: fixed;
     top: 0;

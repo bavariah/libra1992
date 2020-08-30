@@ -42,6 +42,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const modalClose = document.getElementById("id01");
 const mainMenu = document.querySelector(".main-menu");
 const menuClose = document.getElementById("id02");
+const nav = document.getElementById("id03");
 let menuOpen = false;
 
 menuBtn.addEventListener("click", function (btn1, btn2) {
@@ -92,5 +93,12 @@ closeBtns.forEach(function (close) {
 window.addEventListener("click", function (event) {
   if (event.target == modalClose) {
     modalClose.classList.remove("open-modal");
+  }
+});
+window.addEventListener("scroll", function (e) {
+  if (pageYOffset > 130) {
+    nav.style.background = "#d7f6fac7";
+  } else {
+    nav.style.background = "#d7f6fa";
   }
 });
