@@ -200,7 +200,7 @@ header ul li a.yellow:hover {
   opacity: 0.9;
   background: #ff8c00;
 }
-/* showcase info firm */
+/* ==== showcase info firm ==== */
 .showcase {
   position: relative;
   background: url(../img/libraco.jpg) no-repeat center center/cover fixed;

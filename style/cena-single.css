@@ -204,6 +204,19 @@ header ul li a.yellow:hover {
   opacity: 0.9;
   background: #ff8c00;
 }
+header .head-logo img {
+  animation: sliding 2.5s ease;
+}
+@keyframes sliding {
+  0% {
+    opacity: 0;
+    transform: translateX(-550px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 /* blog */
 
 main.wrapper {
