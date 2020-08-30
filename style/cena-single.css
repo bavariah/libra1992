@@ -299,11 +299,16 @@ main.wrapper {
   border: var(--pink) 2px solid;
 }
 .wrapper .blog-post .container .container-item.ponuda {
+  z-index: 1;
+  position: relative;
   padding-left: 30px;
   text-align: left;
   color: #0c0c0c;
   font-size: 1.1rem;
   text-transform: uppercase;
+  transform-origin: left;
+  transition: 1s;
+  transform: scaleX(0);
   background: linear-gradient(
     90deg,
     rgba(240, 110, 214, 1) 0%,
@@ -311,28 +316,43 @@ main.wrapper {
     rgba(240, 110, 214, 0.060609593837535018) 100%
   );
 }
-/* fillup try */
+/* ==== SCROLL ANIMATION ===== */
+.wrapper .blog-post .container .container-item.ponuda[data-scroll="in"] {
+  transform: scaleX(1);
+}
+.wrapper .blog-post .container .container-item.ponuda::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--pink);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.wrapper
+  .blog-post
+  .container
+  .container-item.ponuda[data-scroll="in"]::before {
+  transform: scaleX(0);
+  transition-delay: 1s;
+}
 .wrapper .blog-post .container .fillup {
   background: var(--pink);
   border-radius: 50%;
-  -webkit-animation: blink 2s infinite; /* Safari 4+ */
-  -moz-animation: blink 2s infinite; /* Fx 5+ */
-  -o-animation: blink 2s infinite; /* Opera 12+ */
-  animation: blink 2s infinite; /* IE 10+, Fx 29+ */
+  transition: 2s ease;
 }
-/* fillup animate */
-@keyframes blink {
-  0%,
-  49% {
-    background-color: #d7f6fa;
-    border: 3px solid var(--pink);
-  }
-  50%,
-  100% {
-    background-color: rgb(240, 110, 214);
-    border: 3px solid #d7f6fa;
-  }
+.fillup[data-scroll="in"] {
+  transform: translateX(0px);
+  transition-delay: 2s;
+  opacity: 1;
 }
+.fillup[data-scroll="out"] {
+  transform: translateX(200px);
+  opacity: 0;
+}
+/* ==== SCROLL ANIMATION ===== */
 /* modal */
 .modal-overlay {
   position: fixed;
@@ -531,6 +551,7 @@ input[type="submit"]:hover {
 .footer-top .overlay .mapa iframe.resp-frame {
   padding-top: 10px;
 }
+
 @media (max-width: 1250px) {
   .footer-top .overlay .mapa iframe.resp-frame {
     padding-top: 20px;
@@ -575,9 +596,15 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
   header .head-logo img {
+    position: absolute;
     display: block;
     max-width: 130px;
     max-height: 80px;
+    top: 10px;
+    left: 20px;
+    width: 100%;
+    max-height: 80px;
+    max-width: 130px;
   }
   .img-modal img {
     width: 200px;
@@ -589,23 +616,29 @@ input[type="submit"]:hover {
   }
   header .menu-btn {
     display: block;
+    position: fixed;
   }
   header {
+    background: #d7f6fa;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
     height: 100px;
+    width: 100%;
   }
   header ul.main-menu {
     display: block;
     position: fixed;
-    /* overflow: scroll; */
     z-index: 5;
-    top: 0;
+    top: 100px;
     left: 0;
     background: #d7f6fa;
     width: 60%;
     height: 100%;
     border-right: #ccc 1px solid;
     opacity: 0.95;
-    padding: 100px 0 0 0;
     transform: translateX(-500px);
     transition: transform 0.6s ease-in-out;
   }
@@ -627,6 +660,7 @@ input[type="submit"]:hover {
   .banner {
     background-attachment: scroll;
     height: 300px;
+    margin-top: 100px;
   }
   .banner .linear-head h1 {
     font-size: 2rem;

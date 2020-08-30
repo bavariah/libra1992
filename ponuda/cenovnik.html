@@ -29,7 +29,7 @@
       <a href="#" class="cta-fb"><i class="lab la-facebook la-3x"></i> </a>
       <a href="#" class="cta-ins"><i class="lab la-instagram la-3x"></i> </a>
     </div>
-    <header>
+    <header id="id03">
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div>
@@ -68,39 +68,45 @@
         </p>
         <h2>Cenovnik za 2020.</h2>
         <div class="container">
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
             Preduzeće koje je u sistemu PDV-a
           </div>
-          <div class="container-item cena">od 100 &euro;</div>
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">
+          <div class="container-item cena" data-scroll>od 100 &euro;</div>
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
             Preduzeće koje nije u sistemu PDV-a
           </div>
-          <div class="container-item cena">od 80 &euro;</div>
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">
+          <div class="container-item cena" data-scroll>od 80 &euro;</div>
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
             Preduzetnik koji je u sistemu PDV-a
           </div>
-          <div class="container-item cena">od 80 &euro;</div>
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">
+          <div class="container-item cena" data-scroll>od 80 &euro;</div>
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
             Preduzetnik koji nije u sistemu PDV-a
           </div>
-          <div class="container-item cena">od 60 &euro;</div>
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">
+          <div class="container-item cena" data-scroll>od 60 &euro;</div>
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
             Samostalne zanatske i ugostiteljske usluge
           </div>
-          <div class="container-item cena">od 50 &euro;</div>
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">Paušalac sa zaposlenima</div>
-          <div class="container-item cena">od 40 &euro;</div>
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">Paušalac bez zaposlenih</div>
-          <div class="container-item cena">od 30 &euro;</div>
-          <div class="container-item fillup"></div>
-          <div class="container-item ponuda">Preduzetnik u mirovanju</div>
+          <div class="container-item cena" data-scroll>od 50 &euro;</div>
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
+            Paušalac sa zaposlenima
+          </div>
+          <div class="container-item cena" data-scroll>od 40 &euro;</div>
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
+            Paušalac bez zaposlenih
+          </div>
+          <div class="container-item cena" data-scroll>od 30 &euro;</div>
+          <div class="container-item fillup" data-scroll></div>
+          <div class="container-item ponuda" data-scroll>
+            Preduzetnik u mirovanju
+          </div>
           <div class="container-item cena">od 20 &euro;</div>
           <!-- <div class="container-item fillup"></div>
               <div class="container-item text">Lorem ipsum dolor sit amet.</div>
@@ -268,7 +274,7 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>
       ScrollOut({
-        /* options */
+        threshold: 0.9,
       });
     </script>
   </body>

@@ -617,6 +617,7 @@ input[type="submit"]:hover {
     width: 100%;
   }
   header .head-logo img {
+    display: block;
     position: absolute;
     top: 10px;
     left: 20px;
@@ -627,7 +628,6 @@ input[type="submit"]:hover {
   header ul.main-menu {
     display: block;
     position: fixed;
-    /* overflow: scroll; */
     z-index: 5;
     top: 100px;
     left: 0;
