@@ -71,19 +71,27 @@
           <div class="grid-item">
             <ul>
               <li><span>Usluge koje pružamo:</span></li>
-              <li class="one">1. Knjiženje izdatih i primnjenih računa</li>
-              <li class="one">2. Knjiženje izvoda banki</li>
-              <li class="one">3. Knjiženje maloprodajnih kalkulacija</li>
-              <li class="one">4. Obračun PDV-a</li>
-              <li class="one">5. Obračun plata</li>
-              <li class="one">6. Elektronsko slanje Poreskih Prijava</li>
-              <li class="one">7. Prijava i odjava zaposlenih</li>
-              <li class="one">8. Izrada ugovora o radu</li>
-              <li class="one">9. Izrada završnog računa</li>
-              <li class="one">
+              <li class="one" data-scroll>
+                1. Knjiženje izdatih i primnjenih računa
+              </li>
+              <li class="one" data-scroll>2. Knjiženje izvoda banki</li>
+              <li class="one" data-scroll>
+                3. Knjiženje maloprodajnih kalkulacija
+              </li>
+              <li class="one" data-scroll>4. Obračun PDV-a</li>
+              <li class="one" data-scroll>5. Obračun plata</li>
+              <li class="one" data-scroll>
+                6. Elektronsko slanje Poreskih Prijava
+              </li>
+              <li class="one" data-scroll>7. Prijava i odjava zaposlenih</li>
+              <li class="one" data-scroll>8. Izrada ugovora o radu</li>
+              <li class="one" data-scroll>9. Izrada završnog računa</li>
+              <li class="one" data-scroll>
                 10. Praćenje propisa i besplatno Poresko Savetovanje
               </li>
-              <li class="one">11. Dostupnost u okviru radnog vremena</li>
+              <li class="one" data-scroll>
+                11. Dostupnost u okviru radnog vremena
+              </li>
             </ul>
           </div>
           <!-- image -->
@@ -262,5 +270,11 @@
       <a href="https://bavariah.github.io/"><small>Marko Todorovic</small></a>
     </footer>
     <script src="../js/myScript.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+      ScrollOut({
+        threshold: 0.9,
+      });
+    </script>
   </body>
 </html>
