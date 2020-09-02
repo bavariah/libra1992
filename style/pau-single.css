@@ -141,11 +141,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 130px;
-  /* padding: 10px 0; */
   margin: 0;
-  /* -moz-box-shadow: inset 0 -10px 10px -10px #000000;
-  -webkit-box-shadow: inset 0 -10px 10px -10px #000000;
-  box-shadow: inset 0 -10px 10px -10px #000000; */
 }
 header .head-logo img {
   width: 100%;
@@ -154,7 +150,6 @@ header .head-logo img {
 }
 header ul {
   height: 130px;
-  /* padding-left: 50px; */
 }
 header ul,
 .links {
@@ -318,7 +313,7 @@ main.wrapper {
   margin: 0;
 }
 
-/* mario test */
+/* animate mario vs scooter */
 .grass,
 .sky,
 .road {
@@ -412,6 +407,7 @@ main.wrapper {
     transform: scale(1);
   }
 }
+/* upit */
 .upit {
   padding: 30px 20px;
 }
