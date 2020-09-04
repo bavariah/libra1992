@@ -364,19 +364,19 @@ main.wrapper {
 }
 .upit p {
   display: inline-block;
+  font-size: 2rem;
 }
 .upit .btn-upit {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 50px;
   background: #d7f6fa;
   color: #000000;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1.5rem;
   border-radius: 0.4rem;
   transition: all 0.3s linear;
   border-color: var(--pink);
   cursor: pointer;
   text-transform: uppercase;
-  padding: 5px;
   animation: bounce 2s ease-in-out infinite;
 }
 .wrapper .blog-post .upit .btn-upit:hover {
@@ -819,7 +819,15 @@ input[type="submit"]:hover {
     background-color: #f06ed62a;
     border-right: 3px solid var(--pink);
   }
-
+  .upit p {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .upit .btn-upit {
+    display: block;
+    margin: auto;
+  }
   .footer-top {
     flex-direction: column;
     margin-top: 50px;
