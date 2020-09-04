@@ -465,8 +465,8 @@ main.wrapper {
   background: #d7f6fa;
   border-radius: 0.5rem;
   width: 90vw;
-  height: 45vh;
-  max-width: 960px;
+  height: 55vh;
+  max-width: 1090px;
   text-align: center;
   display: grid;
   place-items: center;
