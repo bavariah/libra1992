@@ -415,7 +415,7 @@ main.wrapper {
   display: inline-block;
   font-size: 2rem;
 }
-.upit .btn-upit {
+.upit .btn-upitno {
   display: inline-block;
   margin-left: 50px;
   background: #d7f6fa;
@@ -614,7 +614,67 @@ input[type="submit"]:hover {
   text-align: left;
 }
 .footer-top .overlay .contact li {
-  padding-top: 10px;
+  line-height: 2;
+  font-size: 1.1rem;
+  padding: 5px;
+  margin-top: 10px;
+}
+.footer-top .overlay .info-site .contact li i.la-envelope {
+  transition: all 0.3s linear;
+  animation-name: ride;
+  animation-duration: 1.4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  position: absolute;
+  color: var(--pink);
+  left: 8px;
+  top: 8px;
+}
+@keyframes ride {
+  from {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(15px);
+    opacity: 0;
+  }
+}
+.footer-top .overlay .info-site .contact li i.la-phone {
+  transition: all 0.3s linear;
+  position: absolute;
+  color: green;
+  left: 10px;
+  top: 8px;
+}
+.footer-top .overlay .info-site .contact li i.la-address-card {
+  color: purple;
+  margin-right: 8px;
+}
+.footer-top .overlay .info-site .contact li i {
+  font-size: 1.8rem;
+  border-radius: 10px;
+}
+.footer-top .overlay .info-site .contact li.mailme {
+  border-left: 3px solid var(--pink);
+  border-right: 3px solid var(--pink);
+  border-radius: 10px;
+  position: relative;
+}
+.footer-top .overlay .info-site .contact li.callme {
+  border-radius: 10px;
+  position: relative;
+}
+.footer-top .overlay .info-site .contact li.findme {
+  border-radius: 10px;
+  position: relative;
+  margin-left: 5px;
+}
+.footer-top .overlay .info-site .contact li.mailme a {
+  margin-left: 45px;
+}
+.footer-top .overlay .info-site .contact li.callme a {
+  margin-left: 50px;
 }
 .footer-bottom {
   background-color: #d7f6fa;
@@ -778,9 +838,22 @@ input[type="submit"]:hover {
     font-size: 2rem;
     text-align: center;
   }
-  .upit .btn-upit {
+  .upit .btn-upitno {
     display: block;
     margin: auto;
+  }
+  .footer-top .overlay .info-site {
+    padding-right: 20px;
+    margin: auto;
+  }
+  .footer-top .overlay h4 {
+    border-bottom: 1px solid var(--pink);
+  }
+  .footer-top .overlay .contact {
+    text-align: center;
+  }
+  .footer-top .overlay .info-site .contact li.callme a {
+    margin-left: 20px;
   }
   .footer-top {
     flex-direction: column;
