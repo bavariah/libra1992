@@ -280,15 +280,19 @@ main.showcase .showcase-grid .text-info p {
 }
 /* keyframes */
 header .head-logo img {
-  animation: sliding 2.5s ease;
+  animation: sliding 1.5s ease;
 }
 main.showcase .showcase-grid .logo img {
-  animation: sliding 3.1s ease;
+  animation: sliding 1.5s ease;
 }
 @keyframes sliding {
   0% {
     opacity: 0;
-    transform: translateX(-550px);
+    transform: translateX(-450px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
