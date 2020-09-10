@@ -284,7 +284,6 @@ main.wrapper {
   transition-delay: 1s;
 }
 .banner {
-  background: url(../img/preduzece.jpg) no-repeat center center/cover fixed;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -809,11 +808,6 @@ input[type="submit"]:hover {
     font-size: 2.5rem;
     line-height: 1.1;
   }
-  .banner {
-    margin-top: 100px;
-    background-attachment: scroll;
-    height: 300px;
-  }
   .cta-bars {
     bottom: 50%;
   }
@@ -931,6 +925,15 @@ input[type="submit"]:hover {
   .hide-ms {
     display: none;
   }
+  .banner {
+    background-image: url(../img/preduzece.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    height: 300px;
+  }
   /* Slideshow container */
   .slideshow-container {
     max-width: 700px;
@@ -1017,6 +1020,13 @@ input[type="submit"]:hover {
 @media (min-width: 551px) {
   .hide-ds {
     display: none;
+  }
+  .banner {
+    background-image: url(../img/preduzece.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 375px) {

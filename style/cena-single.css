@@ -233,7 +233,6 @@ main.wrapper {
   padding: 50px 0px;
 }
 .banner {
-  background: url(../img/jimmy.jpg) no-repeat center center/cover fixed;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -723,11 +722,6 @@ input[type="submit"]:hover {
     line-height: 100px;
     text-align: center;
   }
-  .banner {
-    background-attachment: scroll;
-    height: 300px;
-    margin-top: 100px;
-  }
   .banner .linear-head h1 {
     font-size: 2rem;
     line-height: 1.2;
@@ -844,6 +838,15 @@ input[type="submit"]:hover {
   }
 }
 @media (max-width: 550px) {
+  .banner {
+    background-image: url(../img/libra-cen-phone.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 100px;
+  }
   .hide-ms {
     display: none;
   }
@@ -937,6 +940,13 @@ input[type="submit"]:hover {
 @media (min-width: 551px) {
   .hide-ds {
     display: none;
+  }
+  .banner {
+    background-image: url(../img/jimmy.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 375px) {

@@ -201,9 +201,8 @@ header ul li a.yellow:hover {
   background: #ff8c00;
 }
 /* ==== showcase info firm ==== */
-.showcase {
+main.showcase {
   position: relative;
-  background: url(../img/libraco.jpg) no-repeat center center/cover fixed;
   height: 550px;
   display: flex;
   align-items: center;
@@ -742,14 +741,13 @@ a.box {
   .links {
     display: none;
   }
-  main.showcase .showcase-grid .logo img {
-    width: 300px;
-    height: auto;
-  }
   main.showcase {
     flex-direction: column;
     min-height: 100vh;
-    background-attachment: scroll;
+  }
+  main.showcase .showcase-grid .logo img {
+    width: 300px;
+    height: auto;
   }
   main.showcase .showcase-grid {
     margin: 0;
@@ -842,6 +840,14 @@ a.box {
   .hide-ms {
     display: none;
   }
+  main.showcase {
+    background-image: url(../img/libra-home-phone.jpg);
+    flex-direction: column;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .box,
   a.box {
     height: 220px;
@@ -932,6 +938,13 @@ a.box {
 @media (min-width: 551px) {
   .hide-ds {
     display: none;
+  }
+  main.showcase {
+    background-image: url(../img/libraco.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 375px) {

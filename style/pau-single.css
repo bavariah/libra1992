@@ -261,7 +261,6 @@ main.wrapper {
   border-right: 3px solid var(--pink);
 }
 .banner {
-  background: url(../img/pausalac.jpg) no-repeat center center/cover fixed;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -804,11 +803,6 @@ input[type="submit"]:hover {
     font-size: 2.7rem;
     line-height: 1.1;
   }
-  .banner {
-    background-attachment: scroll;
-    height: 300px;
-    margin-top: 100px;
-  }
   .cta-bars {
     bottom: 50%;
   }
@@ -894,6 +888,15 @@ input[type="submit"]:hover {
   }
 }
 @media (max-width: 550px) {
+  .banner {
+    background-image: url(../img/pausalac-phone.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 100px;
+  }
   .hide-ms {
     display: none;
   }
@@ -986,6 +989,13 @@ input[type="submit"]:hover {
 @media (min-width: 551px) {
   .hide-ds {
     display: none;
+  }
+  .banner {
+    background-image: url(../img/pausalac.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 375px) {
