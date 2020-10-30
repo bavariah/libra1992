@@ -72,12 +72,6 @@ a {
   color: #fff;
   margin-top: 5px;
 }
-.cta-ins {
-  background-color: rgb(120, 25, 163);
-  border-radius: 10px;
-  color: #fff;
-  margin-top: 5px;
-}
 ul,
 .links {
   list-style: none;
@@ -158,9 +152,6 @@ header ul,
 header .links {
   padding-left: 50px;
 }
-header .links .la-instagram {
-  padding-left: 10px;
-}
 header ul li {
   height: inherit;
   text-align: center;
@@ -227,9 +218,9 @@ main.wrapper {
   margin: 0 auto;
   padding: 50px 25px;
 }
-.wrapper .blog-post h1 {
+.wrapper .blog-post h2 {
   text-align: center;
-  padding-bottom: 5px;
+  padding: 25px;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -245,23 +236,17 @@ main.wrapper {
 .wrapper .blog-post ul {
   padding: 10px 20px;
 }
-.wrapper .blog-post ul li:first-child {
-  padding-bottom: 10px;
-  font-size: 2rem;
-}
 .wrapper .blog-post ul li {
-  line-height: 2;
+  line-height: 1.7;
+  font-size: 1.1rem;
   padding: 10px;
+  font-style: italic;
 }
-.wrapper .blog-post ul li.one {
-  transition: background-color 0.4s linear;
-}
-.wrapper .blog-post ul li.one:hover {
-  background-color: #f06ed62a;
-  border-right: 3px solid var(--pink);
+.inner-link:hover {
+  color: var(--pink);
 }
 .banner {
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,16 +260,16 @@ main.wrapper {
 }
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
     opacity: 0;
+    transform: scale(0);
   }
   to {
-    transform: rotate(349deg);
+    transform: scale(1);
     opacity: 1;
   }
 }
 .banner .linear-head h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   padding-bottom: 5px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -891,7 +876,7 @@ input[type="submit"]:hover {
 }
 @media (max-width: 550px) {
   .banner {
-    background-image: url(../img/pausalac-phone.jpg);
+    background-image: url(../img/freelancer.jpg);
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -993,7 +978,7 @@ input[type="submit"]:hover {
     display: none;
   }
   .banner {
-    background-image: url(../img/pausalac.jpg);
+    background-image: url(../img/freelancer.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
