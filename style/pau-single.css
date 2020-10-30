@@ -427,7 +427,7 @@ main.wrapper {
   text-transform: uppercase;
   animation: bounce 2s ease-in-out infinite;
 }
-.wrapper .blog-post .upit .btn-upit:hover {
+.wrapper .blog-post .upit .btn-upitno:hover {
   background: var(--pink);
 }
 /* modal */

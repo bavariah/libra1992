@@ -292,7 +292,7 @@ main.wrapper {
   color: var(--pink);
 }
 .wrapper .blog-post .grid-article {
-  height: 100%;
+  height: 80%;
   height: 600px;
   width: 100%;
   overflow: hidden;
@@ -307,7 +307,7 @@ main.wrapper {
 }
 
 .sky {
-  height: 30%;
+  height: 20%;
   background: #f06ed6c9;
 }
 
@@ -317,7 +317,7 @@ main.wrapper {
 }
 
 .road {
-  height: 50%;
+  height: 40%;
   background: dimgrey;
   box-sizing: border-box;
   border-top: 10px solid grey;
@@ -339,19 +339,11 @@ main.wrapper {
   height: 0px;
   width: 100%;
   position: absolute;
-  top: 30%;
-}
-.lines2 {
-  box-sizing: border-box;
-  border: 4px dashed #fff;
-  height: 0px;
-  width: 100%;
-  position: absolute;
-  top: 65%;
+  top: 50%;
 }
 .mario {
   position: absolute;
-  top: -55px;
+  top: -50px;
   left: 0px;
   animation-name: drive;
   animation-duration: 2.2s;
@@ -364,7 +356,7 @@ main.wrapper {
 }
 .luigi {
   position: absolute;
-  top: 135px;
+  top: 85px;
   left: 0px;
   z-index: 1;
   animation-name: drive;
@@ -414,7 +406,7 @@ main.wrapper {
   text-transform: uppercase;
   animation: bounce 2s ease-in-out infinite;
 }
-.wrapper .blog-post .upit .btn-upit:hover {
+.wrapper .blog-post .upit .btn-upitno:hover {
   background: var(--pink);
 }
 /* modal */
