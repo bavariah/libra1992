@@ -302,6 +302,12 @@ main.wrapper {
 .wrapper .blog-post:hover p span {
   color: var(--pink);
 }
+.under-line {
+  text-shadow: var(--pink) 1px 1px;
+}
+.wrapper .blog-post:hover p .under-line {
+  text-decoration: underline;
+}
 .wrapper .blog-post .grid-article {
   height: 80%;
   height: 600px;
