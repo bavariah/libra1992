@@ -747,6 +747,11 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
+  .blog-euro {
+    bottom: 40px;
+    left: 160px;
+    max-height: 36px;
+  }
   .mario {
     animation-duration: 2.2s;
   }
