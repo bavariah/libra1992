@@ -225,11 +225,22 @@ main.wrapper {
   text-transform: uppercase;
 }
 .wrapper .blog-post p {
-  line-height: 1.5;
+  line-height: 2;
   font-size: 1.2rem;
   padding: 50px 0px;
+  position: relative;
 }
-.wrapper .blog-post .grid-item span {
+.blog-euro {
+  position: absolute;
+  bottom: 45px;
+  left: 150px;
+  transform: scale(0);
+  transition: 0.3s all;
+}
+.wrapper .blog-post p:hover .blog-euro {
+  transform: scale(1);
+}
+.wrapper .blog-post p .wrapper .blog-post .grid-item span {
   color: var(--pink);
   font-size: 1.2rem;
 }
@@ -343,10 +354,10 @@ main.wrapper {
 }
 .mario {
   position: absolute;
-  top: -50px;
+  top: -30px;
   left: 0px;
   animation-name: drive;
-  animation-duration: 2.2s;
+  animation-duration: 1.6s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -356,18 +367,48 @@ main.wrapper {
 }
 .luigi {
   position: absolute;
-  top: 85px;
+  top: 45px;
   left: 0px;
   z-index: 1;
-  animation-name: drive;
-  animation-duration: 1.4s;
+  animation-name: truck;
+  animation-duration: 1.6s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-@keyframes drive {
+.euro {
+  position: absolute;
+  top: 30px;
+  max-width: 100px;
+  max-height: 50px;
+  right: -100px;
+  z-index: 1;
+  animation-name: evro;
+  animation-duration: 1.6s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes evro {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+@keyframes truck {
   from {
     transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(1400px);
+    top: 0px;
+  }
+}
+@keyframes drive {
+  from {
+    transform: translateX(-400px);
   }
   to {
     transform: translateX(1200px);
@@ -707,10 +748,22 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
   .mario {
-    animation-duration: 3.5s;
+    animation-duration: 2.2s;
   }
   .luigi {
-    animation-duration: 2.3s;
+    animation-duration: 2.2s;
+  }
+  .euro {
+    animation-duration: 2.2s;
+  }
+  @keyframes evro {
+    0% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
   }
   .modal-container {
     height: auto;
