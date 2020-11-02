@@ -188,6 +188,10 @@ header ul li a.gold:hover {
   opacity: 0.9;
   background: #ffd700;
 }
+header ul li a.grey:hover {
+  opacity: 0.9;
+  background: #992222;
+}
 header ul li a.pink:hover {
   opacity: 0.9;
   background: #008b8b;

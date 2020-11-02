@@ -192,6 +192,10 @@ header ul li a.blue:hover {
   opacity: 0.9;
   background: #ff1493;
 }
+header ul li a.grey:hover {
+  opacity: 0.9;
+  background: #992222;
+}
 header ul li a.green:hover {
   opacity: 0.9;
   background: #228b22;

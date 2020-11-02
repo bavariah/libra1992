@@ -199,6 +199,10 @@ header ul li a.yellow:hover {
   opacity: 0.9;
   background: #ff8c00;
 }
+header ul li a.grey:hover {
+  opacity: 0.9;
+  background: #992222;
+}
 header .head-logo img {
   animation: sliding 2.5s ease;
 }
