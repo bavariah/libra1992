@@ -238,6 +238,7 @@ main.wrapper {
   animation: falling 0.8s 4s ease forwards, swing 2s 5s ease forwards;
   top: -100px;
   left: 80%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .blog-euro {
   max-width: 190px;
@@ -247,6 +248,7 @@ main.wrapper {
   animation: falling 0.8s 4s ease forwards, swing 2s 5s ease forwards;
   bottom: 35%;
   right: 0;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @keyframes falling {
   0% {
