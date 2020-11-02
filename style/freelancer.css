@@ -220,9 +220,12 @@ main.wrapper {
   position: relative;
 }
 .wrapper .blog-post h2 {
+  animation: pulsate 3s ease-in-out infinite;
+  color: var(--pink);
   text-align: center;
   padding: 25px;
   line-height: 1.2;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .wrapper .blog-post p {
@@ -293,6 +296,7 @@ main.wrapper {
   color: var(--pink);
   display: inline-block;
   animation: pulsate 2s ease-in-out infinite;
+  font-size: 1.5rem;
 }
 .inner-link:hover {
   opacity: 0.8;
