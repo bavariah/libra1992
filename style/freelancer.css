@@ -685,28 +685,13 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
+  .blog-euro-big {
+    display: none;
+  }
   .blog-euro {
-    bottom: 40px;
-    left: 160px;
-    max-height: 36px;
-  }
-  .mario {
-    animation-duration: 2.2s;
-  }
-  .luigi {
-    animation-duration: 2.2s;
-  }
-  .euro {
-    animation-duration: 2.2s;
-  }
-  @keyframes evro {
-    0% {
-      transform: translateX(-150px);
-    }
-    100% {
-      transform: translateX(300px);
-      opacity: 0;
-    }
+    max-width: 100px;
+    bottom: 27%;
+    right: 25%;
   }
   .modal-container {
     height: auto;
@@ -801,6 +786,9 @@ input[type="submit"]:hover {
   main.wrapper {
     margin-bottom: 100px;
     padding: 0px 0px;
+  }
+  .upit {
+    margin-top: 50px;
   }
   .upit p {
     display: block;
@@ -974,6 +962,11 @@ input[type="submit"]:hover {
   }
 }
 @media (max-width: 375px) {
+  .blog-euro {
+    max-width: 100px;
+    bottom: 25%;
+    right: 25%;
+  }
   main.showcase .showcase-grid .logo img {
     width: 200px;
     height: auto;
@@ -994,5 +987,9 @@ input[type="submit"]:hover {
 @media (max-width: 325px) {
   header ul.main-menu li {
     height: 70px;
+  }
+  .blog-euro {
+    max-width: 100px;
+    bottom: 23%;
   }
 }
