@@ -230,38 +230,48 @@ main.wrapper {
   font-size: 1.2rem;
   padding: 50px 0px;
 }
-.blog-euro {
+.blog-euro-big {
+  max-width: 200px;
   position: absolute;
   opacity: 0;
   transform-origin: 10px 10px;
   animation: falling 0.8s 4s ease forwards, swing 2s 5s ease forwards;
-  bottom: 38%;
-  left: 57.5%;
+  top: -100px;
+  left: 80%;
+}
+.blog-euro {
+  max-width: 190px;
+  position: absolute;
+  opacity: 0;
+  transform-origin: 10px 10px;
+  animation: falling 0.8s 4s ease forwards, swing 2s 5s ease forwards;
+  bottom: 35%;
+  right: 0;
 }
 @keyframes falling {
   0% {
     opacity: 0;
   }
   75% {
-    transform: translateY(180px);
+    transform: translateY(170px);
   }
   100% {
-    transform: translateY(160px);
+    transform: translateY(150px);
     opacity: 1;
   }
 }
 @keyframes swing {
   0% {
-    transform: translateY(160px) rotateZ(0deg);
+    transform: translateY(150px) rotateZ(0deg);
   }
   40% {
-    transform: translateY(160px) rotateZ(90deg);
+    transform: translateY(150px) rotateZ(90deg);
   }
   70% {
-    transform: translateY(160px) rotateZ(70deg);
+    transform: translateY(150px) rotateZ(70deg);
   }
   100% {
-    transform: translateY(160px) rotateZ(76deg);
+    transform: translateY(150px) rotateZ(76deg);
   }
 }
 .wrapper .blog-post p .wrapper .blog-post .grid-item span {
@@ -277,8 +287,11 @@ main.wrapper {
   padding: 10px;
   font-style: italic;
 }
-.inner-link:hover {
+.inner-link {
   color: var(--pink);
+}
+.inner-link:hover {
+  opacity: 0.8;
 }
 .banner {
   height: 400px;
@@ -338,111 +351,6 @@ main.wrapper {
   width: 100%;
   overflow: hidden;
   margin: 0;
-}
-
-/* animate mario vs scooter */
-.grass,
-.sky,
-.road {
-  position: relative;
-}
-
-.sky {
-  height: 20%;
-  background: #f06ed6c9;
-}
-
-.grass {
-  height: 20%;
-  background: skyblue;
-}
-
-.road {
-  height: 40%;
-  background: dimgrey;
-  box-sizing: border-box;
-  border-top: 10px solid grey;
-  border-bottom: 10px solid grey;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.road h2 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-.lines1 {
-  box-sizing: border-box;
-  border: 4px dashed #fff;
-  height: 0px;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-}
-.mario {
-  position: absolute;
-  top: -30px;
-  left: 0px;
-  animation-name: drive;
-  animation-duration: 1.6s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.road img {
-  height: 120px;
-}
-.luigi {
-  position: absolute;
-  top: 45px;
-  left: 0px;
-  z-index: 1;
-  animation-name: truck;
-  animation-duration: 1.6s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.euro {
-  position: absolute;
-  top: 30px;
-  max-width: 100px;
-  max-height: 50px;
-  right: -100px;
-  z-index: 1;
-  animation-name: evro;
-  animation-duration: 1.6s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@keyframes evro {
-  0% {
-    transform: translateX(-200px);
-  }
-  100% {
-    transform: translateX(100px);
-  }
-}
-@keyframes truck {
-  from {
-    transform: translateX(-200px);
-  }
-  to {
-    transform: translateX(1400px);
-    top: 0px;
-  }
-}
-@keyframes drive {
-  from {
-    transform: translateX(-400px);
-  }
-  to {
-    transform: translateX(1200px);
-  }
 }
 /* end */
 @keyframes bounce {
