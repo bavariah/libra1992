@@ -235,7 +235,7 @@ main.wrapper {
   position: absolute;
   opacity: 0;
   transform-origin: 10px 10px;
-  animation: falling 0.8s 4s ease forwards, swing 2s 5s ease forwards;
+  animation: falling 0.8s 2s ease forwards, swing 2s 3s ease forwards;
   top: -100px;
   left: 80%;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -291,9 +291,22 @@ main.wrapper {
 }
 .inner-link {
   color: var(--pink);
+  display: inline-block;
+  animation: pulsate 2s ease-in-out infinite;
 }
 .inner-link:hover {
   opacity: 0.8;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
 .banner {
   height: 400px;
