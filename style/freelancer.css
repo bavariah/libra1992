@@ -217,6 +217,7 @@ main.wrapper {
   max-width: 1120px;
   margin: 0 auto;
   padding: 50px 25px;
+  position: relative;
 }
 .wrapper .blog-post h2 {
   text-align: center;
@@ -228,17 +229,40 @@ main.wrapper {
   line-height: 2;
   font-size: 1.2rem;
   padding: 50px 0px;
-  position: relative;
 }
 .blog-euro {
   position: absolute;
-  bottom: 45px;
-  left: 150px;
-  transform: scale(0);
-  transition: 0.3s all;
+  opacity: 0;
+  transform-origin: 10px 10px;
+  animation: falling 0.8s 4s ease forwards, swing 2s 5s ease forwards;
+  bottom: 38%;
+  left: 57.5%;
 }
-.wrapper .blog-post p:hover .blog-euro {
-  transform: scale(1);
+@keyframes falling {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(180px);
+  }
+  100% {
+    transform: translateY(160px);
+    opacity: 1;
+  }
+}
+@keyframes swing {
+  0% {
+    transform: translateY(160px) rotateZ(0deg);
+  }
+  40% {
+    transform: translateY(160px) rotateZ(90deg);
+  }
+  70% {
+    transform: translateY(160px) rotateZ(70deg);
+  }
+  100% {
+    transform: translateY(160px) rotateZ(76deg);
+  }
 }
 .wrapper .blog-post p .wrapper .blog-post .grid-item span {
   color: var(--pink);
