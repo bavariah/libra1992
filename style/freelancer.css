@@ -245,7 +245,12 @@ main.wrapper {
   animation: falling 0.8s 2s ease forwards, swing 2s 3s ease forwards;
   top: -100px;
   left: 80%;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.2),
+    5px 6px 20px 3px rgba(0, 0, 0, 0.19);
+}
+.blog-euro-big:hover {
+  box-shadow: 7px 10px 14px 5px rgba(0, 0, 0, 0.2),
+    7px 10px 25px 5px rgba(0, 0, 0, 0.19);
 }
 .blog-euro {
   max-width: 190px;
@@ -344,10 +349,14 @@ main.wrapper {
   padding-bottom: 5px;
   line-height: 1.2;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px #d7f6fa, 1px 2px 1px #d7f6fa, 1px 3px 1px #d7f6fa,
-    1px 4px 1px #d7f6fa, 1px 5px 1px #d7f6fa, 1px 6px 1px #d7f6fa,
-    1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgb(215, 246, 250, 0.2),
-    1px 25px 35px rgb(215, 246, 250, 0.2), 1px 30px 60px rgb(215, 246, 250, 0.2);
+  color: #d7f6fa;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 1px #0e0e0e, 1px 2px 1px #000000, 1px 3px 1px #000000,
+    1px 4px 1px #0a0a0a, 1px 5px 1px #0a0a0a, 1px 6px 1px #040404,
+    1px 18px 6px rgba(215, 246, 250, 0.22),
+    1px 22px 10px rgba(215, 246, 250, 0.213),
+    1px 25px 35px rgba(215, 246, 250, 0.234),
+    1px 30px 60px rgba(215, 246, 250, 0.207);
 }
 .wrapper .blog-post .liner {
   height: 5px;
@@ -875,7 +884,7 @@ input[type="submit"]:hover {
 }
 @media (max-width: 550px) {
   .banner {
-    background-image: url(../img/freelancer.jpg);
+    background-image: url(../img/dan-gold.jpg);
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -977,7 +986,7 @@ input[type="submit"]:hover {
     display: none;
   }
   .banner {
-    background-image: url(../img/freelancer.jpg);
+    background-image: url(../img/dan-gold.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
