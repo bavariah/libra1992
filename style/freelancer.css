@@ -1015,7 +1015,7 @@ input[type="submit"]:hover {
 
   .active,
   .dot:hover {
-    background-color: #717171;
+    background-color: #d7f6fa;
   }
 }
 @media (min-width: 551px) {
@@ -1087,7 +1087,7 @@ input[type="submit"]:hover {
 }
 
 .section-center {
-  width: 70vw;
+  width: 90vw;
   margin: 0 auto;
   max-width: 1010px;
 }
@@ -1125,7 +1125,6 @@ input[type="submit"]:hover {
   text-transform: capitalize;
   font-size: 1rem;
   display: block;
-  background: var(--clr-grey-9);
   cursor: pointer;
   transition: var(--transition);
   letter-spacing: var(--spacing);
