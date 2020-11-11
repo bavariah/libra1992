@@ -56,29 +56,6 @@ menuBtn.addEventListener("click", function (btn1, btn2) {
     menuOpen = false;
   }
 });
-// menuBtn.forEach(function (close) {
-//   close.addEventListener("click", function (e) {
-//     mainMenu.classList.remove("show");
-//     menuBtn.classList.remove("show");
-//   });
-// });
-// document
-//   .querySelector(".menu-btn")
-//   .addEventListener("click", () =>
-//     document.querySelector(".main-menu").classList.toggle("show")
-//   );
-
-// let menuOpen = false;
-// menuBtn.addEventListener("click", () => {
-//   if (!menuOpen) {
-//     menuBtn.classList.add("show");
-//     menuOpen = true;
-//   } else {
-//     menuBtn.classList.remove("show");
-//     menuOpen = false;
-//   }
-// });
-
 modalBtns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     modalOverlay.classList.add("open-modal");

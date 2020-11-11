@@ -848,6 +848,9 @@ a.box {
   .hide-ms {
     display: none;
   }
+  header .head-logo img {
+    animation: sliding 2.5s ease;
+  }
   main.showcase {
     background-image: url(../img/libra-home-phone.jpg);
     flex-direction: column;
