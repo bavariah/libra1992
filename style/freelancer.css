@@ -1170,6 +1170,7 @@ h4 {
 }
 h6 {
   font-size: 1.2rem;
+  padding: 10px 10px;
 }
 #deviza {
   color: #f06ed6;
@@ -1188,7 +1189,8 @@ h6 {
   border: #f06ed6 2px solid;
 }
 @media screen and (max-width: 550px) {
-  .content #cnt {
+  .content #cnt,
+  #cnt_dva {
     margin: auto;
   }
   h4 {
