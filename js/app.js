@@ -27,11 +27,11 @@ cta.addEventListener('click', function(e) {
   let kurs = document.getElementById('kurs').value;
 
   let prihod = document.getElementById('prihod').value = deviza * kurs;
-  let trosak = document.getElementById('trosak').value = prihod * .2;
-  let osnovica = document.getElementById('osnovica').value = prihod - trosak;
-  let porez = document.getElementById('porez').value = osnovica * .2;
-  let pio = document.getElementById('pio').value = osnovica * .255;
-  let zdrav = document.getElementById('zdrav').value = osnovica * .103;
-  let totalPorez = document.getElementById('totalPorez').value = porez + pio + zdrav;
-  let netoPrihod = document.getElementById('netoPrihod').value = prihod - totalPorez;
+  let trosak = document.getElementById('trosak').value = (prihod * .2).toFixed(2);
+  let osnovica = document.getElementById('osnovica').value = (prihod - trosak).toFixed(2);
+  let porez = document.getElementById('porez').value = (osnovica * .2).toFixed(2);
+  let pio = document.getElementById('pio').value = (osnovica * .255).toFixed(2);
+  let zdrav = document.getElementById('zdrav').value = (osnovica * .103).toFixed(2);
+  let totalPorez = document.getElementById('totalPorez').value = (parseFloat(porez) + parseFloat(pio) + parseFloat(zdrav)).toFixed(2);
+  let netoPrihod = document.getElementById('netoPrihod').value = (parseFloat(prihod) - parseFloat(totalPorez)).toFixed(2);
 })
