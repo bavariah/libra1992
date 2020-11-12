@@ -1063,10 +1063,6 @@ input[type="submit"]:hover {
   max-width: 1010px;
 }
 @media screen and (min-width: 992px) {
-  .about-img {
-    margin-bottom: 0;
-  }
-
   .about-center {
     display: grid;
     grid-template-columns: 1fr;
@@ -1082,7 +1078,7 @@ input[type="submit"]:hover {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .tab-btn:nth-child(1) {
   border-top-left-radius: var(--radius);
@@ -1141,6 +1137,17 @@ input[type="submit"]:hover {
   cursor: pointer;
   transition: var(--transition);
 }
+.content #cnt_dva {
+  display: block;
+  color: #f06ed6;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: #f06ed6 2px solid;
+  cursor: pointer;
+  transition: var(--transition);
+}
 .input-style {
   margin-bottom: 10px;
   height: 25px;
@@ -1153,11 +1160,30 @@ input[type="submit"]:hover {
   color: #ffffff;
   opacity: 0.9;
 }
+.content #cnt_dva:hover {
+  background: #f06ed6;
+  color: #ffffff;
+  opacity: 0.9;
+}
+h4 {
+  padding: 20px 10px;
+}
+h6 {
+  font-size: 1.2rem;
+}
 #deviza {
   color: #f06ed6;
   border: #f06ed6 2px solid;
 }
 #kurs {
+  color: #f06ed6;
+  border: #f06ed6 2px solid;
+}
+#deviza_dva {
+  color: #f06ed6;
+  border: #f06ed6 2px solid;
+}
+#kurs_dva {
   color: #f06ed6;
   border: #f06ed6 2px solid;
 }
@@ -1167,7 +1193,7 @@ input[type="submit"]:hover {
   }
   h4 {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 10px;
   }
   #kalkulator {
     display: grid;

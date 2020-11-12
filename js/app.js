@@ -35,3 +35,18 @@ cta.addEventListener('click', function(e) {
   let totalPorez = document.getElementById('totalPorez').value = (parseFloat(porez) + parseFloat(pio) + parseFloat(zdrav)).toFixed(2);
   let netoPrihod = document.getElementById('netoPrihod').value = (parseFloat(prihod) - parseFloat(totalPorez)).toFixed(2);
 })
+
+let ctadva = document.getElementById('cnt_dva');
+
+ctadva.addEventListener('click', function(e) {
+  let deviza_dva = document.getElementById('deviza_dva').value;
+  let kurs_dva = document.getElementById('kurs_dva').value;
+
+  let prihod_dva = document.getElementById('prihod_dva').value = deviza_dva * kurs;
+  let trosak_dva = document.getElementById('trosak_dva').value = (prihod_dva * .2).toFixed(2);
+  let osnovica_dva = document.getElementById('osnovica_dva').value = (prihod_dva - trosak_dva).toFixed(2);
+  let porez_dva = document.getElementById('porez_dva').value = (osnovica_dva * .2).toFixed(2);
+  let pio_dva = document.getElementById('pio_dva').value = (osnovica_dva * .255).toFixed(2);
+  let totalPorezi = document.getElementById('totalPorezi').value = (parseFloat(porez_dva) + parseFloat(pio_dva)).toFixed(2);
+  let netoPrihodi = document.getElementById('netoPrihodi').value = (parseFloat(prihod_dva) - parseFloat(totalPorezi)).toFixed(2);
+})
