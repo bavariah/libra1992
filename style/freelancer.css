@@ -1136,6 +1136,7 @@ input[type="submit"]:hover {
   border: #f06ed6 2px solid;
   cursor: pointer;
   transition: var(--transition);
+  margin-left: 20px;
 }
 .content #cnt_dva {
   display: block;
@@ -1146,6 +1147,7 @@ input[type="submit"]:hover {
   text-transform: uppercase;
   border: #f06ed6 2px solid;
   cursor: pointer;
+  margin-left: 20px;
   transition: var(--transition);
 }
 .input-style {
@@ -1165,12 +1167,24 @@ input[type="submit"]:hover {
   color: #ffffff;
   opacity: 0.9;
 }
+.span-me {
+  color: #f06ed6;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.cta-porez {
+  color: #f06ed6;
+}
+.cta-porez:hover {
+  opacity: 0.9;
+}
 h4 {
   padding: 20px 10px;
+  font-size: 1.3rem;
 }
 h6 {
-  font-size: 1.2rem;
-  padding: 10px 10px;
+  font-size: 1.1rem;
+  padding: 20px 10px;
 }
 #deviza {
   color: #f06ed6;
