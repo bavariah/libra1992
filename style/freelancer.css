@@ -897,7 +897,7 @@ input[type="submit"]:hover {
   }
   .blog-euro {
     max-width: 100px;
-    bottom: 16%;
+    bottom: 14%;
     right: 25%;
   }
   .hide-ms {
@@ -1004,7 +1004,7 @@ input[type="submit"]:hover {
 @media (max-width: 375px) {
   .blog-euro {
     max-width: 100px;
-    bottom: 15%;
+    bottom: 13%;
     right: 25%;
   }
   main.showcase .showcase-grid .logo img {
@@ -1028,9 +1028,12 @@ input[type="submit"]:hover {
   header ul.main-menu li {
     height: 70px;
   }
+  .banner .linear-head h1 {
+    font-size: 2rem;
+  }
   .blog-euro {
     max-width: 100px;
-    bottom: 15%;
+    bottom: 12%;
   }
 }
 /* ======= tabz */
@@ -1117,7 +1120,7 @@ input[type="submit"]:hover {
 }
 /* ==== kalkulate */
 
-#kalkulator {
+.kalkulator {
   display: grid;
   grid-template-columns: 1fr 140px;
   max-width: 500px;
@@ -1211,7 +1214,7 @@ h6 {
     text-align: center;
     padding: 20px 10px;
   }
-  #kalkulator {
+  .kalkulator {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
