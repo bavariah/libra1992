@@ -1157,6 +1157,7 @@ input[type="submit"]:hover {
   margin-bottom: 10px;
   height: 25px;
   width: 140px;
+  letter-spacing: 1px;
   font-weight: bold;
   text-align: center;
 }
