@@ -345,19 +345,7 @@ main.wrapper {
 }
 .banner .linear-head h1 {
   animation: rotation 1.2s linear;
-}
-@keyframes rotation {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.banner .linear-head h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
   padding-bottom: 5px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -369,6 +357,16 @@ main.wrapper {
     1px 22px 10px rgba(215, 246, 250, 0.213),
     1px 25px 35px rgba(215, 246, 250, 0.234),
     1px 30px 60px rgba(215, 246, 250, 0.207);
+}
+@keyframes rotation {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .wrapper .blog-post .liner {
   height: 5px;
@@ -710,11 +708,15 @@ input[type="submit"]:hover {
     max-width: 330px;
     height: 190px;
   }
+  .banner .linear-head h1 {
+    animation: rotation 1.2s linear;
+    font-size: 4rem;
+    padding-bottom: 5px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+  }
 }
 @media (max-width: 960px) {
-  header .head-logo img {
-    display: none;
-  }
   header .menu-btn {
     display: block;
     position: fixed;
@@ -771,6 +773,15 @@ input[type="submit"]:hover {
     height: 100px;
     text-align: center;
   }
+  header .head-logo img {
+    display: none;
+  }
+  .banner .linear-head h1 {
+    font-size: 3rem;
+    padding-bottom: 5px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+  }
   .footer-top .overlay {
     grid-template-columns: 1fr;
     padding-top: 50px;
@@ -813,7 +824,7 @@ input[type="submit"]:hover {
     font-size: 1.1rem;
   }
   .banner .linear-head h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
     line-height: 1.1;
   }
   .cta-bars {
@@ -908,6 +919,9 @@ input[type="submit"]:hover {
     background-size: cover;
     height: 300px;
     margin-top: 100px;
+  }
+  .banner .linear-head h1 {
+    font-size: 1.5rem;
   }
   .blog-euro {
     max-width: 100px;
@@ -1029,6 +1043,9 @@ input[type="submit"]:hover {
     bottom: 13%;
     right: 25%;
   }
+  .banner .linear-head h1 {
+    font-size: 1.3rem;
+  }
   main.showcase .showcase-grid .logo img {
     width: 200px;
     height: auto;
@@ -1050,16 +1067,13 @@ input[type="submit"]:hover {
     line-height: 60px;
     height: 60px;
   }
-  .banner .linear-head h1 {
-    font-size: 1.7rem;
-  }
 }
 @media (max-width: 325px) {
   header ul.main-menu li {
     height: 60px;
   }
   .banner .linear-head h1 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   .blog-euro {
     max-width: 100px;
@@ -1268,12 +1282,12 @@ h6 {
   }
 }
 /*
-
-#prihod
-#trosak
-#osnovica
-#porez
-#pio
-#zdrav
-#totalPorez
-#netoPrihod */
+  
+  #prihod
+  #trosak
+  #osnovica
+  #porez
+  #pio
+  #zdrav
+  #totalPorez
+  #netoPrihod */

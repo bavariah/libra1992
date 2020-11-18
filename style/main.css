@@ -124,12 +124,6 @@ header .menu-btn.open .menu-btn__burger::after {
   color: #fff;
   margin-top: 5px;
 }
-.cta-ins {
-  background-color: rgb(120, 25, 163);
-  border-radius: 10px;
-  color: #fff;
-  margin-top: 5px;
-}
 ul,
 .links {
   list-style: none;
@@ -174,8 +168,8 @@ header ul li {
 header ul li a {
   display: block;
   min-width: 125px;
-  text-align: center;
-  line-height: 130px;
+  padding: 50px 5px;
+  height: 130px;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.5s ease-in-out;
@@ -203,6 +197,10 @@ header ul li a.green:hover {
 header ul li a.yellow:hover {
   opacity: 0.9;
   background: #ff8c00;
+}
+header ul li a.black:hover {
+  opacity: 0.9;
+  background: #00d0ff;
 }
 /* ==== showcase info firm ==== */
 main.showcase {
@@ -628,54 +626,6 @@ a.box {
   }
 }
 @media (max-width: 960px) {
-  .footer-top .overlay {
-    grid-template-columns: 1fr;
-    padding-top: 50px;
-  }
-  .footer-top .overlay .contact {
-    padding: 30px 0;
-  }
-  .footer-top .overlay .info-site {
-    text-align: center;
-    border-top: 1px solid var(--pink);
-    border-bottom: 1px solid var(--pink);
-  }
-  .footer-top .overlay h4 {
-    border-bottom: none;
-  }
-  .grid-items {
-    margin: 50px 30px 30px;
-  }
-  header ul li a {
-    min-width: 105px;
-  }
-  main.showcase .showcase-grid {
-    flex-direction: column;
-    margin: 50px 50px;
-  }
-  main.showcase .showcase-grid .text-info {
-    padding-left: 0;
-    padding-top: 30px;
-  }
-  main.showcase .showcase-grid .text-info h1 {
-    font-size: 2rem;
-  }
-  main.showcase .showcase-grid .text-info p {
-    font-size: 1rem;
-  }
-  main.showcase .showcase-grid {
-    align-items: center;
-  }
-}
-@media (max-width: 768px) {
-  .modal-container {
-    height: auto;
-    grid-template-columns: 1fr;
-  }
-  .img-modal img {
-    width: 200px;
-    height: auto;
-  }
   header .menu-btn {
     display: block;
     position: fixed;
@@ -711,8 +661,8 @@ a.box {
     border-right: #ccc 1px solid;
     padding: 0;
     opacity: 0.95;
-    transform: translateX(-500px);
-    transition: transform 0.6s ease-in-out;
+    transform: translateX(-600px);
+    transition: transform 0.8s ease-in-out;
   }
   header ul.main-menu.show {
     transform: translateX(-20px);
@@ -726,28 +676,10 @@ a.box {
     height: 100px;
   }
   header ul.main-menu li a {
+    padding: 0;
     line-height: 100px;
+    height: 100px;
     text-align: center;
-  }
-  .cta-bars {
-    bottom: 50%;
-  }
-  .cta-tel {
-    border-radius: 5px;
-  }
-  .cta-fb {
-    border-radius: 5px;
-    margin-top: 3px;
-  }
-  .cta-ins {
-    border-radius: 5px;
-    margin-top: 3px;
-  }
-  .la-3x {
-    font-size: 2.2rem;
-  }
-  .links {
-    display: none;
   }
   main.showcase {
     flex-direction: column;
@@ -763,6 +695,68 @@ a.box {
   }
   main.showcase .showcase-grid .text-info {
     margin-left: 0;
+  }
+  .footer-top .overlay {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+  }
+  .footer-top .overlay .contact {
+    padding: 30px 0;
+  }
+  .footer-top .overlay .info-site {
+    text-align: center;
+    border-top: 1px solid var(--pink);
+    border-bottom: 1px solid var(--pink);
+  }
+  .footer-top .overlay h4 {
+    border-bottom: none;
+  }
+  .grid-items {
+    margin: 50px 30px 30px;
+  }
+  main.showcase .showcase-grid {
+    flex-direction: column;
+    margin: 50px 50px;
+  }
+  main.showcase .showcase-grid .text-info {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  main.showcase .showcase-grid .text-info h1 {
+    font-size: 2rem;
+  }
+  main.showcase .showcase-grid .text-info p {
+    font-size: 1rem;
+  }
+  main.showcase .showcase-grid {
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .modal-container {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  .img-modal img {
+    width: 200px;
+    height: auto;
+  }
+
+  .cta-bars {
+    bottom: 50%;
+  }
+  .cta-tel {
+    border-radius: 5px;
+  }
+  .cta-fb {
+    border-radius: 5px;
+    margin-top: 3px;
+  }
+  .la-3x {
+    font-size: 2.2rem;
+  }
+  .links {
+    display: none;
   }
   .boxes {
     display: grid;
@@ -858,6 +852,14 @@ a.box {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  header ul.main-menu li {
+    font-size: 12px;
+    height: 70px;
+  }
+  header ul.main-menu li a {
+    line-height: 70px;
+    height: 70px;
   }
   .box,
   a.box {
@@ -976,7 +978,12 @@ a.box {
     height: 3px;
   }
   header ul.main-menu li {
-    height: 80px;
+    font-size: 12px;
+    height: 60px;
+  }
+  header ul.main-menu li a {
+    line-height: 60px;
+    height: 60px;
   }
 }
 @media (max-width: 325px) {

@@ -17,13 +17,12 @@
       type="text/css"
     />
     <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico" />
-    <link rel="stylesheet" href="../style/cena-single.css" />
-    <title>Agencija Libra - cenovnik</title>
+
+    <link rel="stylesheet" href="../style/kalkulator-zarada.css" />
+    <title>Agencija Libra1992- Freelancer</title>
     <meta
       name="description"
-      content="Cenovnik. Na formiranje cene utiče više faktora: koliko zaposlenih
-      imate, obim dokumentacije, prometa, u sistemu PDV-a,
-      prijava odjava radnika, izrada bilansa"
+      content="Freelancer - Freelancing oporezivanje u agenciji Libra1992, Beograd"
     />
   </head>
   <body>
@@ -55,71 +54,66 @@
         <li><a class="yellow btn btn-upit" href="#">Upit</a></li>
       </ul>
     </header>
-    <!-- ===== BANNER ===== -->
+    <!-- ==== banner ===== -->
     <div class="banner">
       <div class="linear-head">
-        <h1>koliko će to da košta?</h1>
+        <h1>kalkulator zarada</h1>
       </div>
-      <div class="liner"></div>
     </div>
+    <!-- ===== wrap blog ==== -->
     <main class="wrapper">
-      <!-- ===== BANNER ===== -->
-      <!-- ===== blog-post ===== -->
       <div class="blog-post">
-        <p>
-          Na formiranje cene utiče više faktora kao što su: koliko zaposlenih
-          imate, obim dokumentacije, prometa, da li ste u sistemu PDV-a ili ne,
-          prijava odjava radnika, izrada bilansa itd.... <br />Prilikom
-          zaključivanja ugovora sve stavke su jasno naglašene i objašnjene. U
-          tabeli su okvirno prikazane cene naših usluga ali za detaljne
-          informacije najbolje je kontaktirati nas.
-        </p>
-        <h2>Cenovnik za 2020.</h2>
-        <div class="container">
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Preduzeće koje je u sistemu PDV-a
+        <div class="liner"></div>
+        
+          <h2>Kalkulator zarade</h2> 
+        
+            <!-- tabs -->
+    <div class="tabz">
+      <div class="about-center section-center">
+        <article class="about">
+          <!-- btn container -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">1. Opcija</button>
           </div>
-          <div class="container-item cena" data-scroll>od 100 &euro;</div>
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Preduzeće koje nije u sistemu PDV-a
-          </div>
-          <div class="container-item cena" data-scroll>od 80 &euro;</div>
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Preduzetnik koji je u sistemu PDV-a
-          </div>
-          <div class="container-item cena" data-scroll>od 80 &euro;</div>
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Preduzetnik koji nije u sistemu PDV-a
-          </div>
-          <div class="container-item cena" data-scroll>od 60 &euro;</div>
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Samostalne zanatske i ugostiteljske usluge
-          </div>
-          <div class="container-item cena" data-scroll>od 50 &euro;</div>
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Paušalac sa zaposlenima
-          </div>
-          <div class="container-item cena" data-scroll>od 40 &euro;</div>
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Paušalac bez zaposlenih
-          </div>
-          <div class="container-item cena" data-scroll>od 30 &euro;</div>
-          <div class="container-item fillup" data-scroll></div>
-          <div class="container-item ponuda" data-scroll>
-            Preduzetnik u mirovanju
-          </div>
-          <div class="container-item cena">od 20 &euro;</div>
+          <article class="about-content">
+            <!-- single item -->
+            <div class="content active" id="history">
+              <h4>Ako je lice nezaposleno ( bez prijave na osiguranje ) plaća sve poreze i doprinose.</h4>
+              <h6>Podnosi se poreska prijava PP OPO i po dobijanju BOP-a vrši se uplata
+                na račun  840 – 4848 – 37<br>
+                Poreska uprava <a class="cta-porez" href="https://eporezi.purs.gov.rs/user/login.html">LOGIN</a>
+                </h6>
+              <button id="cnt">izraČunaj</button>
+             <div class="kalkulator">
+               
+               Devizna jedinica (EUR, USD) <input id="deviza" class="input-style" placeholder="0" type="text">
+               Srednji kurs (EUR, USD) <input id="kurs" class="input-style" placeholder="0" type="text">
+               Ugovorena naknada u dinarima <input id="prihod" class="input-style" placeholder="0" type="text" readonly>
+               Normirani troškovi(20%) <input id="trosak" class="input-style" placeholder="0" type="text" readonly>
+               Osnovica poreza i doprinosa <input id="osnovica" class="input-style" placeholder="0" type="text" readonly>
+               Porez(20%) <input id="porez" class="input-style" placeholder="0" type="text" readonly>
+               Doprinos P.I.O.  <input id="pio" class="input-style" placeholder="0" type="text" readonly>
+               Doprinos zdravstvenog osiguranja  <input id="zdrav" class="input-style" placeholder="0" type="text" readonly>
+               Ukupno Porezi i doprinosi <input id="totalPorez" class="input-style" placeholder="0" type="text" readonly>
+               Neto prihod <input id="netoPrihod" class="input-style" placeholder="0" type="text" readonly>
+             </div>
+            </div>
+            <!-- end single item -->
+          </article>
+        </article>
+      </div>
+    </div>
+        <div class="upit">
+          <p>
+            Ukoliko imate bilo kakva pitanja, ili želite da se posavetujete. Pišite nam:
+          </p>
+          <button class="btn btn-upitno"><a aria-label="Send email" href="mailto:info@libra1992.com"
+            ><i class="las la-envelope la-3x"></i></a
+          ></button>
         </div>
       </div>
-      <!-- ===== blog-post ===== -->
     </main>
+    <!-- ===== wrap blog  end ==== -->
     <section class="grid-items hide-ms">
       <div class="grid-item post">
         <img
@@ -154,7 +148,7 @@
         </a>
       </div>
     </section>
-    <!-- ==== MODALNI ===== -->
+    <!-- modal prozor -->
     <div class="modal-overlay" id="id01">
       <div class="modal-container">
         <div class="img-modal">
@@ -240,7 +234,8 @@
         </button>
       </div>
     </div>
-    <!-- ==== MODALNI END ===== -->
+    <!-- modal end -->
+    <!-- slide -->
     <!-- Slideshow container -->
     <div class="slideshow-container hide-ds">
       <!-- Full-width images with number and caption text -->
@@ -290,7 +285,6 @@
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     <!-- slide end -->
-    <!-- ==== FOOTER ==== -->
     <footer id="foo" class="footer-top">
       <div class="overlay">
         <div class="forma">
@@ -328,14 +322,7 @@
       <a href="https://bavariah.github.io/"><small>Marko Todorovic</small></a>
     </footer>
     <script src="../js/myScript.js"></script>
-    <!-- ==== SCROLL PLUGIN ==== -->
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <script>
-      ScrollOut({
-        threshold: 0.9,
-        once: true,
-      });
-    </script>
+    <script src="../js/app.js"></script>
     <script
       type="text/javascript"
       src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
