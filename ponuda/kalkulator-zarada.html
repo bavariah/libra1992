@@ -68,41 +68,130 @@
           <h2>Kalkulator zarade</h2> 
         
             <!-- tabs -->
-    <div class="tabz">
-      <div class="about-center section-center">
-        <article class="about">
-          <!-- btn container -->
-          <div class="btn-container">
-            <button class="tab-btn active" data-id="history">1. Opcija</button>
-          </div>
-          <article class="about-content">
-            <!-- single item -->
-            <div class="content active" id="history">
-              <h4>Ako je lice nezaposleno ( bez prijave na osiguranje ) plaća sve poreze i doprinose.</h4>
-              <h6>Podnosi se poreska prijava PP OPO i po dobijanju BOP-a vrši se uplata
-                na račun  840 – 4848 – 37<br>
-                Poreska uprava <a class="cta-porez" href="https://eporezi.purs.gov.rs/user/login.html">LOGIN</a>
-                </h6>
-              <button id="cnt">izraČunaj</button>
-             <div class="kalkulator">
-               
-               Devizna jedinica (EUR, USD) <input id="deviza" class="input-style" placeholder="0" type="text">
-               Srednji kurs (EUR, USD) <input id="kurs" class="input-style" placeholder="0" type="text">
-               Ugovorena naknada u dinarima <input id="prihod" class="input-style" placeholder="0" type="text" readonly>
-               Normirani troškovi(20%) <input id="trosak" class="input-style" placeholder="0" type="text" readonly>
-               Osnovica poreza i doprinosa <input id="osnovica" class="input-style" placeholder="0" type="text" readonly>
-               Porez(20%) <input id="porez" class="input-style" placeholder="0" type="text" readonly>
-               Doprinos P.I.O.  <input id="pio" class="input-style" placeholder="0" type="text" readonly>
-               Doprinos zdravstvenog osiguranja  <input id="zdrav" class="input-style" placeholder="0" type="text" readonly>
-               Ukupno Porezi i doprinosi <input id="totalPorez" class="input-style" placeholder="0" type="text" readonly>
-               Neto prihod <input id="netoPrihod" class="input-style" placeholder="0" type="text" readonly>
-             </div>
+            <div id="earnings">
+              <form>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p class="blue-description">neto zarada:</p>
+                  </div>
+                  <div>
+                    <input id="netoZarada" class="calculator-input" placeholder="0" type="text" autocomplete="off">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>porez:</p>
+                  </div>
+                  <div>
+                    <input id="porez" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>doprinos za pio:</p>
+                  </div>
+                  <div>
+                    <input id="doprinosZaPio1" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>doprinos za zdravstvo:</p>
+                  </div>
+                  <div>
+                    <input id="doprinosZaZdravstvo1" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>doprinos za nezaposlenost:</p>
+                  </div>
+                  <div>
+                    <input id="doprinosZaNezaposlenost" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>porezi i doprinosi iz zarada:</p>
+                  </div>
+                  <div>
+                    <input id="poreziDoprinosi" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p class="blue-description">bruto zarada (bruto 1):</p>
+                  </div>
+                  <div>
+                    <input id="bruto1" class="calculator-input" placeholder="0" type="text" autocomplete="off">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>doprinos za pio:</p>
+                  </div>
+                  <div>
+                    <input id="doprinosZaPio2" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>doprinos za zdravstvo:</p>
+                  </div>
+                  <div>
+                    <input id="doprinosZaZdravstvo2" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>doprinosi na zarade:</p>
+                  </div>
+                  <div>
+                    <input id="doprinosiNaZarade" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p class="blue-description">ukupno za plaćanje (bruto 2):</p>
+                  </div>
+                  <div>
+                    <input id="bruto2" class="calculator-input" placeholder="0" type="text" autocomplete="off">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>subvencije 65%:</p>
+                  </div>
+                  <div>
+                    <input id="subvencije65" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p class="blue-description">trošak za poslodavca sa povratom od 65%:</p>
+                  </div>
+                  <div>
+                    <input id="trosakPoslodavca65" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p>subvencije 75%:</p>
+                  </div>
+                  <div>
+                    <input id="subvencije75" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
+                    <p class="blue-description">trošak za poslodavca sa povratom od 75%:</p>
+                  </div>
+                  <div>
+                    <input id="trosakPoslodavca75" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+              </form>
             </div>
-            <!-- end single item -->
-          </article>
-        </article>
-      </div>
-    </div>
         <div class="upit">
           <p>
             Ukoliko imate bilo kakva pitanja, ili želite da se posavetujete. Pišite nam:
@@ -322,7 +411,7 @@
       <a href="https://bavariah.github.io/"><small>Marko Todorovic</small></a>
     </footer>
     <script src="../js/myScript.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/zarade.js"></script>
     <script
       type="text/javascript"
       src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"

@@ -722,9 +722,6 @@ input[type="submit"]:hover {
   header .head-logo img {
     display: none;
   }
-  /* header ul li a {
-    min-width: 105px;
-  } */
   header .menu-btn {
     display: block;
     position: fixed;
