@@ -282,18 +282,16 @@ main.wrapper {
 }
 .banner .linear-head h1 {
   animation: rotation 1.4s linear;
-  font-size: 5rem;
+  font-size: 6rem;
   padding-bottom: 5px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #d7f6fa;
+  /* color: #d7f6fa; */
   letter-spacing: 5px;
-  text-shadow: 1px 1px 1px #0e0e0e, 1px 2px 1px #000000, 1px 3px 1px #000000,
-    1px 4px 1px #0a0a0a, 1px 5px 1px #0a0a0a, 1px 6px 1px #040404,
-    1px 18px 6px rgba(215, 246, 250, 0.22),
-    1px 22px 10px rgba(215, 246, 250, 0.213),
-    1px 25px 35px rgba(215, 246, 250, 0.234),
-    1px 30px 60px rgba(215, 246, 250, 0.207);
+  text-shadow: 1px 1px 1px #d7f6fa, 1px 2px 1px #d7f6fa, 1px 3px 1px #d7f6fa,
+    1px 4px 1px #d7f6fa, 1px 5px 1px #d7f6fa, 1px 6px 1px #d7f6fa,
+    1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgb(215, 246, 250, 0.2),
+    1px 25px 35px rgb(215, 246, 250, 0.2), 1px 30px 60px rgb(215, 246, 250, 0.2);
 }
 @keyframes rotation {
   0% {
@@ -910,7 +908,7 @@ h6 {
 }
 @media (max-width: 550px) {
   .banner {
-    background-image: url(../img/phone-kal.jpg);
+    background-image: url(../img/zaksheuskaya.jpg);
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -1037,7 +1035,7 @@ h6 {
     display: none;
   }
   .banner {
-    background-image: url(../img/desktop-kal.jpg);
+    background-image: url(../img/zaksheuskaya.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
