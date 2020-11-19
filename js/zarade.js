@@ -1,4 +1,4 @@
-const calculatorInputs = [
+const kalkulatorInputs = [
       { id: `netoZarada`, value: 0 },
       { id: `porez`, value: 0 },
       { id: `doprinosZaPio1`, value: 0 },
@@ -17,7 +17,7 @@ const calculatorInputs = [
       { id: `totalPorez`, value: 0}
     ]
     
-    //constants
+    // ===== CONST
     const brutoProcenat = 0.478
     const doprinosiProcenat = 0.299
     const zaradeNezaposlenost = 0
@@ -38,7 +38,7 @@ const calculatorInputs = [
     const bruto2Min = najnizaOsnovica + (najnizaOsnovica * zaradePio) + (najnizaOsnovica * zaradeZdravstvo)
     const bruto2Max = najvisaOsnovica + (najvisaOsnovica * zaradePio) + (najvisaOsnovica * zaradeZdravstvo)
     
-    //variables
+    // ==== VARIJABLE
     let netoZarada = 0
     let porez = 0
     let doprinosZaPio1 = 0
@@ -56,7 +56,7 @@ const calculatorInputs = [
     let trosakPoslodavca75 = 0
     let totalPorez = 0
     
-    for (let input of calculatorInputs) {
+    for (let input of kalkulatorInputs) {
       let renderedInput = document.getElementById(input.id)
       renderedInput.addEventListener(`click`, () => handleClick(renderedInput))
       renderedInput.addEventListener(`change`, () => handleChange(renderedInput))
@@ -64,7 +64,7 @@ const calculatorInputs = [
     
     function handleClick(input) {
       if (input.id === `netoZarada` || input.id === `bruto1` || input.id === `bruto2`) {
-          for (let calcInput of calculatorInputs) {
+          for (let calcInput of kalkulatorInputs) {
               calcInput.value = 0
               renderInputValues()
           }
@@ -110,7 +110,7 @@ const calculatorInputs = [
       trosakPoslodavca65 = bruto2 - subvencije65
       subvencije75 = (bruto2 - netoZarada) * 0.75
       trosakPoslodavca75 = bruto2 - subvencije75
-      updateCalculatorInputValues()
+      updateKalkulatorInputValues()
     }
     
     function calculateContributions() {
@@ -139,32 +139,34 @@ const calculatorInputs = [
       totalPorez = porez + doprinosZaPio1 + doprinosZaZdravstvo1 + doprinosZaNezaposlenost + doprinosZaPio2 + doprinosZaZdravstvo2
     }
     
-    function updateCalculatorInputValues() {
-      calculatorInputs[0].value = netoZarada
-      calculatorInputs[1].value = porez
-      calculatorInputs[2].value = doprinosZaPio1
-      calculatorInputs[3].value = doprinosZaZdravstvo1
-      calculatorInputs[4].value = doprinosZaNezaposlenost
-      calculatorInputs[5].value = poreziDoprinosi
-      calculatorInputs[6].value = bruto1
-      calculatorInputs[7].value = doprinosZaPio2
-      calculatorInputs[8].value = doprinosZaZdravstvo2
-      calculatorInputs[9].value = doprinosiNaZarade
-      calculatorInputs[10].value = bruto2
-      calculatorInputs[11].value = subvencije65
-      calculatorInputs[12].value = trosakPoslodavca65
-      calculatorInputs[13].value = subvencije75
-      calculatorInputs[14].value = trosakPoslodavca75
-      calculatorInputs[15].value = totalPorez
+    // UPD INPUT VALUES
+
+    function updateKalkulatorInputValues() {
+      kalkulatorInputs[0].value = netoZarada
+      kalkulatorInputs[1].value = porez
+      kalkulatorInputs[2].value = doprinosZaPio1
+      kalkulatorInputs[3].value = doprinosZaZdravstvo1
+      kalkulatorInputs[4].value = doprinosZaNezaposlenost
+      kalkulatorInputs[5].value = poreziDoprinosi
+      kalkulatorInputs[6].value = bruto1
+      kalkulatorInputs[7].value = doprinosZaPio2
+      kalkulatorInputs[8].value = doprinosZaZdravstvo2
+      kalkulatorInputs[9].value = doprinosiNaZarade
+      kalkulatorInputs[10].value = bruto2
+      kalkulatorInputs[11].value = subvencije65
+      kalkulatorInputs[12].value = trosakPoslodavca65
+      kalkulatorInputs[13].value = subvencije75
+      kalkulatorInputs[14].value = trosakPoslodavca75
+      kalkulatorInputs[15].value = totalPorez
       renderInputValues()
     }
     
     function renderInputValues() {
-      for (let input of calculatorInputs) {
+      for (let input of kalkulatorInputs) {
           input.value === 0 ? document.getElementById(input.id).value = `` : document.getElementById(input.id).value = formatNumber(Math.round(input.value))
       }
     }
-    
+    //  ======= FORMATIRANJE BR ========
     function formatNumber(num) {
       return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ` din.`
     }
