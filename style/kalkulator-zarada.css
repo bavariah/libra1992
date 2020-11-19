@@ -281,7 +281,7 @@ main.wrapper {
   display: block;
 }
 .banner .linear-head h1 {
-  animation: rotation 1.2s linear;
+  animation: rotation 1.4s linear;
   font-size: 5rem;
   padding-bottom: 5px;
   line-height: 1.2;
@@ -296,11 +296,15 @@ main.wrapper {
     1px 30px 60px rgba(215, 246, 250, 0.207);
 }
 @keyframes rotation {
-  from {
+  0% {
     opacity: 0;
     transform: scale(0);
   }
-  to {
+  60% {
+    transform: scale(1.3);
+    opacity: 0.8;
+  }
+  100% {
     transform: scale(1);
     opacity: 1;
   }
