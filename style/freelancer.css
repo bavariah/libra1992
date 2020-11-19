@@ -344,14 +344,18 @@ main.wrapper {
   display: block;
 }
 .banner .linear-head h1 {
-  animation: rotation 1.2s linear;
+  animation: rotation 1.4s linear;
 }
 @keyframes rotation {
-  from {
+  0% {
     opacity: 0;
     transform: scale(0);
   }
-  to {
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
     transform: scale(1);
     opacity: 1;
   }
