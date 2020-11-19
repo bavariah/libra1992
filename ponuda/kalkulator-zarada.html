@@ -80,6 +80,14 @@
                 </div>
                 <div class="calculator-row">
                   <div class="input-description">
+                    <p>Ukupno porezi i doprinosi:</p>
+                  </div>
+                  <div>
+                    <input id="totalPorez" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
+                  </div>
+                </div>
+                <div class="calculator-row">
+                  <div class="input-description">
                     <p>porez na zaradu:</p>
                   </div>
                   <div>
@@ -118,7 +126,7 @@
                     <input id="poreziDoprinosi" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
                   </div>
                 </div>
-                <div class="calculator-row">
+                <div class="calculator-row invis">
                   <div class="input-description">
                     <p class="blue-description">bruto zarada (bruto 1):</p>
                   </div>
@@ -150,15 +158,15 @@
                     <input id="doprinosiNaZarade" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
                   </div>
                 </div>
-                <div class="calculator-row">
+                <div class="calculator-row invis">
                   <div class="input-description">
                     <p class="blue-description">ukupno za plaćanje (bruto 2):</p>
                   </div>
                   <div>
                     <input id="bruto2" class="calculator-input" placeholder="0" type="text" autocomplete="off">
                   </div>
-                </div>
-                <!-- <div class="calculator-row">
+                </div> 
+                <div class="calculator-row invis">
                   <div class="input-description">
                     <p>subvencije 65%:</p>
                   </div>
@@ -166,7 +174,7 @@
                     <input id="subvencije65" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
                   </div>
                 </div>
-                <div class="calculator-row">
+                <div class="calculator-row invis">
                   <div class="input-description">
                     <p class="blue-description">trošak za poslodavca sa povratom od 65%:</p>
                   </div>
@@ -174,7 +182,7 @@
                     <input id="trosakPoslodavca65" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
                   </div>
                 </div>
-                <div class="calculator-row">
+                <div class="calculator-row invis">
                   <div class="input-description">
                     <p>subvencije 75%:</p>
                   </div>
@@ -182,14 +190,14 @@
                     <input id="subvencije75" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
                   </div>
                 </div>
-                <div class="calculator-row">
+                <div class="calculator-row invis">
                   <div class="input-description">
                     <p class="blue-description">trošak za poslodavca sa povratom od 75%:</p>
                   </div>
                   <div>
                     <input id="trosakPoslodavca75" class="calculator-input-readonly" placeholder="0" type="text" readonly="">
                   </div>
-                </div> -->
+                </div>
               </form>
             </div>
         <div class="upit">

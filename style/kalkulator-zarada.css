@@ -679,6 +679,9 @@ input[type="email"] {
   font-weight: bold;
   color: #333;
 }
+#earnings .calculator-row.invis {
+  display: none;
+}
 /* MEDIA Q ============================== */
 @media (max-width: 1350px) {
   header ul li {

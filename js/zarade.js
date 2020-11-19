@@ -13,7 +13,8 @@ const calculatorInputs = [
       { id: `subvencije65`, value: 0 },
       { id: `trosakPoslodavca65`, value: 0 },
       { id: `subvencije75`, value: 0 },
-      { id: `trosakPoslodavca75`, value: 0 }
+      { id: `trosakPoslodavca75`, value: 0 },
+      { id: `totalPorez`, value: 0}
     ]
     
     //constants
@@ -53,6 +54,7 @@ const calculatorInputs = [
     let trosakPoslodavca65 = 0
     let subvencije75 = 0
     let trosakPoslodavca75 = 0
+    let totalPorez = 0
     
     for (let input of calculatorInputs) {
       let renderedInput = document.getElementById(input.id)
@@ -134,6 +136,7 @@ const calculatorInputs = [
     porez = (bruto1 - neoporezivi) * poreskaStopa
       poreziDoprinosi = porez + doprinosZaPio1 + doprinosZaZdravstvo1 + doprinosZaNezaposlenost
       doprinosiNaZarade = doprinosZaPio2 + doprinosZaZdravstvo2
+      totalPorez = porez + doprinosZaPio1 + doprinosZaZdravstvo1 + doprinosZaNezaposlenost + doprinosZaPio2 + doprinosZaZdravstvo2
     }
     
     function updateCalculatorInputValues() {
@@ -152,6 +155,7 @@ const calculatorInputs = [
       calculatorInputs[12].value = trosakPoslodavca65
       calculatorInputs[13].value = subvencije75
       calculatorInputs[14].value = trosakPoslodavca75
+      calculatorInputs[15].value = totalPorez
       renderInputValues()
     }
     
