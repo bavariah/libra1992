@@ -636,7 +636,7 @@ input[type="email"] {
   margin: 0 auto;
   padding: 30px 0;
 }
-#earnings .calculator-row {
+#earnings .kalkulator-row {
   width: 100%;
   margin: auto;
   display: flex;
@@ -644,21 +644,21 @@ input[type="email"] {
   align-items: center;
   padding: 5px 20px;
 }
-#earnings .calculator-row .input-description {
+#earnings .kalkulator-row .input-description {
   width: 75%;
   text-align: right;
   margin-right: 20px;
   text-transform: uppercase;
   font-size: 13px;
 }
-#earnings .calculator-row .input-description.bigs {
+#earnings .kalkulator-row .input-description.bigs {
   font-size: 15px;
 }
-#earnings .calculator-row .pink-description {
+#earnings .kalkulator-row .pink-description {
   color: var(--pink);
   font-weight: bold;
 }
-#earnings .calculator-row .calculator-input {
+#earnings .kalkulator-row .kalkulator-input {
   text-align: right;
   padding: 5px 10px;
   background-color: #f06ed62f;
@@ -673,7 +673,7 @@ input[type="email"] {
   color: #333;
 }
 
-#earnings .calculator-row .calculator-input-readonly {
+#earnings .kalkulator-row .kalkulator-input-readonly {
   text-align: right;
   padding: 5px 10px;
   border: 1px solid #dedfdf;
@@ -686,13 +686,13 @@ input[type="email"] {
   font-weight: bold;
   color: #333;
 }
-#earnings .calculator-row .calculator-input-readonly.senka {
+#earnings .kalkulator-row .kalkulator-input-readonly.senka {
   box-shadow: 3px 3px 2px #f06ed6;
 }
-#earnings .calculator-row.invis {
+#earnings .kalkulator-row.invis {
   display: none;
 }
-#earnings .calculator-row h5,
+#earnings .kalkulator-row h5,
 h6 {
   font-size: 1.2rem;
 }
@@ -921,17 +921,17 @@ h6 {
   .banner .linear-head h1 {
     font-size: 1.5rem;
   }
-  #earnings .calculator-row .input-description {
+  #earnings .kalkulator-row .input-description {
     width: 75%;
     text-align: right;
     margin-right: 20px;
     text-transform: uppercase;
     font-size: 11px;
   }
-  #earnings .calculator-row .input-description.bigs {
+  #earnings .kalkulator-row .input-description.bigs {
     font-size: 13px;
   }
-  #earnings .calculator-row h5,
+  #earnings .kalkulator-row h5,
   h6 {
     font-size: 1rem;
   }
