@@ -821,6 +821,7 @@ h6 {
   .banner .linear-head h1 {
     font-size: 2rem;
     line-height: 1.1;
+    animation: rotation 2.1s linear;
   }
   .cta-bars {
     bottom: 50%;
@@ -1035,7 +1036,7 @@ h6 {
     display: none;
   }
   .banner {
-    background-image: url(../img/zaksheuskaya.jpg);
+    background-image: url(../img/zaksheuskaya-phone.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
