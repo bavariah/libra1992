@@ -901,6 +901,7 @@ a.box {
   }
   .article-kal .kalkulator-info h5 {
     font-size: 1.8rem;
+    text-transform: uppercase;
     position: absolute;
     bottom: 33px;
     left: -300px;
