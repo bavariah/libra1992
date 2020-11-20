@@ -490,7 +490,7 @@ a.box {
 }
 /* box kalkulator=============== */
 .article-kal {
-  color: #101010;
+  color: var(--pink);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,38 +498,32 @@ a.box {
   height: 250px;
   margin-top: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* background-color: #d7f6fa48; */
-  background: linear-gradient(
-    90deg,
-    rgba(145, 22, 120, 0.604) 0%,
-    rgba(208, 49, 176, 0.522) 48%,
-    rgba(240, 110, 214, 0.5606617647058824) 100%
-  );
 }
 .article-kal .kalkulator-info {
-  height: 100%;
-  max-width: 350px;
   padding-left: 40px;
-  border-right: #d7f6fa 10px double;
 }
 .article-kal .kalkulator-info h5 {
-  font-size: 2rem;
-  margin: 10px 10px 30px;
-}
-.article-kal .kalkulator-info p {
-  font-size: 1.1rem;
-  margin: 10px 10px 30px;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 1px #0e0e0e, 1px 2px 1px #000000, 1px 3px 1px #000000,
+    1px 4px 1px #0a0a0a, 1px 5px 1px #0a0a0a, 1px 6px 1px #040404,
+    1px 18px 6px rgba(215, 246, 250, 0.22),
+    1px 22px 10px rgba(215, 246, 250, 0.213),
+    1px 25px 35px rgba(215, 246, 250, 0.234),
+    1px 30px 60px rgba(215, 246, 250, 0.207);
 }
 .article-kal .kalkulator-icon {
   margin-right: 50px;
   font-size: 2rem;
-  height: 100%;
-  border-left: #d7f6fa 10px double;
 }
 .article-kal .kalkulator-icon i {
-  line-height: inherit;
   padding-left: 30px;
   padding-top: 30px;
+  text-shadow: 1px 1px 1px #0e0e0e, 1px 2px 1px #000000, 1px 3px 1px #000000,
+    1px 4px 1px #0a0a0a, 1px 5px 1px #0a0a0a, 1px 6px 1px #040404,
+    1px 18px 6px rgba(215, 246, 250, 0.22),
+    1px 22px 10px rgba(215, 246, 250, 0.213),
+    1px 25px 35px rgba(215, 246, 250, 0.234),
+    1px 30px 60px rgba(215, 246, 250, 0.207);
 }
 /* footer */
 .footer-top {
@@ -803,6 +797,9 @@ a.box {
   .links {
     display: none;
   }
+  .article-kal {
+    margin: 100px 0;
+  }
   .boxes {
     display: grid;
     grid-gap: 20px;
@@ -889,6 +886,29 @@ a.box {
   }
   header .head-logo img {
     animation: sliding 2.5s ease;
+  }
+  .article-kal {
+    flex-direction: column;
+    background-image: url(../img/kocka.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .article-kal .kalkulator-info {
+    padding-left: 0;
+  }
+  .article-kal .kalkulator-info h5 {
+    font-size: 1.8rem;
+  }
+  .article-kal .kalkulator-icon {
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
+  .article-kal .kalkulator-icon i {
+    padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
   }
   main.showcase {
     background-image: url(../img/libra-home-phone.jpg);
@@ -999,6 +1019,13 @@ a.box {
   }
   main.showcase {
     background-image: url(../img/libraco.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .article-kal {
+    background-image: url(../img/kocka.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
