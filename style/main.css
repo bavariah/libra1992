@@ -890,7 +890,7 @@ a.box {
   .article-kal {
     position: relative;
     flex-direction: column;
-    background-image: url(../img/kocka-phone.jpg);
+    background-image: url(../img/Ewall.jpg);
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -900,13 +900,12 @@ a.box {
     padding-left: 0;
   }
   .article-kal .kalkulator-info h5 {
+    overflow: hidden;
     font-size: 1.8rem;
     text-transform: uppercase;
     position: absolute;
-    bottom: 33px;
+    bottom: 30px;
     left: -300px;
-    display: inline-block;
-    z-index: 1;
     animation-name: drive;
     animation-duration: 5s;
     animation-fill-mode: both;
@@ -928,7 +927,7 @@ a.box {
   .article-kal .kalkulator-icon i {
     padding-left: 0;
     padding-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   main.showcase {
     background-image: url(../img/libra-home-phone.jpg);
