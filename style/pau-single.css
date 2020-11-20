@@ -1063,7 +1063,7 @@ input[type="submit"]:hover {
 
   .active,
   .dot:hover {
-    background-color: #717171;
+    background-color: #d7f6fa;
   }
 }
 @media (min-width: 551px) {
