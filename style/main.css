@@ -888,8 +888,9 @@ a.box {
     animation: sliding 2.5s ease;
   }
   .article-kal {
+    position: relative;
     flex-direction: column;
-    background-image: url(../img/kocka.jpg);
+    background-image: url(../img/kocka-phone.jpg);
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -900,6 +901,24 @@ a.box {
   }
   .article-kal .kalkulator-info h5 {
     font-size: 1.8rem;
+    position: absolute;
+    bottom: 33px;
+    left: -300px;
+    display: inline-block;
+    z-index: 1;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes drive {
+    from {
+      transform: translateX(-300px);
+    }
+    to {
+      transform: translateX(700px);
+    }
   }
   .article-kal .kalkulator-icon {
     margin-right: 0;
@@ -908,7 +927,7 @@ a.box {
   .article-kal .kalkulator-icon i {
     padding-left: 0;
     padding-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   main.showcase {
     background-image: url(../img/libra-home-phone.jpg);
