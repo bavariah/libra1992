@@ -488,6 +488,49 @@ a.box {
     background-color: #d7f6fa;
   }
 }
+/* box kalkulator=============== */
+.article-kal {
+  color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  margin-top: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background-color: #d7f6fa48; */
+  background: linear-gradient(
+    90deg,
+    rgba(145, 22, 120, 0.604) 0%,
+    rgba(208, 49, 176, 0.522) 48%,
+    rgba(240, 110, 214, 0.5606617647058824) 100%
+  );
+}
+.article-kal .kalkulator-info {
+  height: 100%;
+  max-width: 350px;
+  padding-left: 40px;
+  border-right: #d7f6fa 10px double;
+}
+.article-kal .kalkulator-info h5 {
+  font-size: 2rem;
+  margin: 10px 10px 30px;
+}
+.article-kal .kalkulator-info p {
+  font-size: 1.1rem;
+  margin: 10px 10px 30px;
+}
+.article-kal .kalkulator-icon {
+  margin-right: 50px;
+  font-size: 2rem;
+  height: 100%;
+  border-left: #d7f6fa 10px double;
+}
+.article-kal .kalkulator-icon i {
+  line-height: inherit;
+  padding-left: 30px;
+  padding-top: 30px;
+}
 /* footer */
 .footer-top {
   background-color: #d7f6fa;
