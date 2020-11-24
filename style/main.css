@@ -178,6 +178,10 @@ header ul li a.red:hover {
   opacity: 0.9;
   background: #9932cc;
 }
+header ul li a.gold:hover {
+  opacity: 0.9;
+  background: #ffd700;
+}
 header ul li a.pink:hover {
   opacity: 0.9;
   background: #008b8b;
@@ -493,7 +497,11 @@ a.box {
   color: var(--pink);
   height: 250px;
   margin-top: 200px;
+  transition: 0.3s all ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.article-kal:hover {
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .article-kal .kalkulator-info {
   padding-left: 40px;
@@ -635,6 +643,12 @@ a.box {
 }
 .footer-top .overlay .mapa iframe.resp-frame {
   padding-top: 10px;
+}
+.footer-bottom .hireMe {
+  transition: 0.3s all;
+}
+.footer-bottom .hireMe:hover {
+  color: var(--pink);
 }
 @media (max-width: 1250px) {
   .footer-top .overlay .mapa iframe.resp-frame {

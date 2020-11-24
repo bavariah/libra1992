@@ -707,6 +707,12 @@ input[type="submit"]:hover {
 .footer-top .overlay .mapa iframe.resp-frame {
   padding-top: 10px;
 }
+.footer-bottom .hireMe {
+  transition: 0.3s all;
+}
+.footer-bottom .hireMe:hover {
+  color: var(--pink);
+}
 /* MEDIA Q ============================== */
 @media (max-width: 1350px) {
   header ul li {
