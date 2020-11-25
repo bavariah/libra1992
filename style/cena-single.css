@@ -176,9 +176,13 @@ header ul li a {
   font-weight: bold;
   transition: 0.5s ease-in-out;
 }
+header ul li a.aktiv {
+  background: #ff1493;
+  color: #d7f6fa;
+}
 header ul li a.gold:hover {
   opacity: 0.9;
-  background: #ffd700;
+  background: var(--pink);
 }
 header ul li a.red:hover {
   opacity: 0.9;

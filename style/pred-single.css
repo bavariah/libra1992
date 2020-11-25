@@ -141,11 +141,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 130px;
-  /* padding: 10px 0; */
   margin: 0;
-  /* -moz-box-shadow: inset 0 -10px 10px -10px #000000;
-  -webkit-box-shadow: inset 0 -10px 10px -10px #000000;
-  box-shadow: inset 0 -10px 10px -10px #000000; */
 }
 header .head-logo img {
   width: 100%;
@@ -181,13 +177,16 @@ header ul li a {
   font-weight: bold;
   transition: 0.5s ease-in-out;
 }
+header ul li a.aktiv {
+  background: var(--pink);
+}
 header ul li a.red:hover {
   opacity: 0.9;
   background: #9932cc;
 }
 header ul li a.gold:hover {
   opacity: 0.9;
-  background: #ffd700;
+  background: var(--pink);
 }
 header ul li a.grey:hover {
   opacity: 0.9;
