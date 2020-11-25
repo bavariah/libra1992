@@ -14,7 +14,7 @@ var mybutton = document.getElementById("topBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 800) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
