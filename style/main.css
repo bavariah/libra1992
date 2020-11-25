@@ -75,6 +75,35 @@ a {
 #topBtn:hover {
   background-color: #ff25d0;
 }
+/* ====== top kontakt ============ */
+@media (min-width: 961px) {
+  .kontakt-top {
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .kontakt-info {
+    padding: 5px 40px;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  .info-border {
+    border-left: 3px dotted #ffffff;
+  }
+  .info-border-two {
+    border-left: 3px dotted #ffffff;
+    border-right: 3px dotted #ffffff;
+  }
+  .kontakt-info i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  .kontakt-info a {
+    color: #ffffff;
+  }
+}
+
 /* header button */
 header .menu-btn {
   position: absolute;
@@ -198,7 +227,11 @@ header ul li a {
   transition: 0.5s ease-in-out;
 }
 header ul li a.aktiv {
-  background: var(--pink);
+  background: #008b8b;
+}
+header ul li a.pink:hover {
+  opacity: 0.9;
+  background: #008b8b;
 }
 header ul li a.red:hover {
   opacity: 0.9;
