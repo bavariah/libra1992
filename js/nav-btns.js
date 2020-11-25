@@ -7,16 +7,22 @@ for (let i = 0; i < menuLength; i++) {
   }
 }
 
-// const btns = document.querySelectorAll("a");
-// const header = document.getElementById("id03");
+//Get the button
+var mybutton = document.getElementById("topBtn");
 
-// header.addEventListener("click", function (e) {
-//   const id = e.target.dataset.id;
-//   if (id) {
-//     //remove active from other button
-//     btns.forEach(function (btn) {
-//       btn.classList.remove("aktiv");
-//       e.target.classList.add("aktiv");
-//     });
-//   }
-// });
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
