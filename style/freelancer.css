@@ -175,11 +175,11 @@ header ul li a {
   transition: 0.5s ease-in-out;
 }
 header ul li a.aktiv {
-  background: var(--pink);
+  background: #992222;
 }
 header ul li a.gold:hover {
   opacity: 0.9;
-  background: var(--pink);
+  background: #ffd700;
 }
 header ul li a.red:hover {
   opacity: 0.9;

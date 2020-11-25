@@ -183,7 +183,7 @@ header ul li a.red:hover {
 }
 header ul li a.gold:hover {
   opacity: 0.9;
-  background: var(--pink);
+  background: #ffd700;
 }
 header ul li a.pink:hover {
   opacity: 0.9;
