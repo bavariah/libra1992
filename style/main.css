@@ -956,6 +956,13 @@ a.box {
   header .head-logo img {
     animation: sliding 2.5s ease;
   }
+  #topBtn {
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
+  }
   .article-kal {
     flex-direction: column;
     max-width: 100%;
