@@ -178,11 +178,11 @@ header ul li a {
   transition: 0.5s ease-in-out;
 }
 header ul li a.aktiv {
-  background: #9932cc;
+  background: #a74fd3;
 }
 header ul li a.red:hover {
   opacity: 0.9;
-  background: #9932cc;
+  background: #a74fd3;
 }
 header ul li a.gold:hover {
   opacity: 0.9;
@@ -190,7 +190,7 @@ header ul li a.gold:hover {
 }
 header ul li a.grey:hover {
   opacity: 0.9;
-  background: #992222;
+  background: #d05959;
 }
 header ul li a.pink:hover {
   opacity: 0.9;

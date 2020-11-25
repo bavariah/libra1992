@@ -185,7 +185,7 @@ header ul li a.gold:hover {
 }
 header ul li a.red:hover {
   opacity: 0.9;
-  background: #9932cc;
+  background: #a74fd3;
 }
 header ul li a.pink:hover {
   opacity: 0.9;
@@ -205,7 +205,7 @@ header ul li a.yellow:hover {
 }
 header ul li a.grey:hover {
   opacity: 0.9;
-  background: #992222;
+  background: #d05959;
 }
 header ul li a.black:hover {
   opacity: 0.9;
