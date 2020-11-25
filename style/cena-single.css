@@ -48,6 +48,58 @@ body {
   background: #d323b0;
 }
 /* ====== end scroll ===== */
+/* scroll btn ======== */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 5;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: rgb(12, 100, 182);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+#topBtn:hover {
+  opacity: 0.9;
+}
+/* ====== top kontakt ============ */
+@media (min-width: 961px) {
+  .kontakt-top {
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .kontakt-info {
+    padding: 5px 40px;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  .info-border {
+    border-left: 3px dotted #ffffff;
+  }
+  .info-border-two {
+    border-left: 3px dotted #ffffff;
+    border-right: 3px dotted #ffffff;
+  }
+  .kontakt-info i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  .kontakt-info a {
+    color: #ffffff;
+  }
+}
+/* end */
 a {
   cursor: pointer;
   color: #000000;
@@ -876,6 +928,13 @@ input[type="submit"]:hover {
     background-size: cover;
     height: 300px;
     margin-top: 100px;
+  }
+  #topBtn {
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
   }
   .hide-ms {
     display: none;

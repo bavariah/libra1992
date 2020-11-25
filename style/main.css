@@ -63,17 +63,16 @@ a {
   text-transform: uppercase;
   border: none;
   outline: none;
-  background-color: #ff25d090;
-  color: #000000;
+  background-color: rgb(12, 100, 182);
+  color: #ffffff;
   font-weight: bold;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
   transition: 0.4s ease-in-out;
 }
-
 #topBtn:hover {
-  background-color: #ff25d0;
+  opacity: 0.9;
 }
 /* ====== top kontakt ============ */
 @media (min-width: 961px) {
