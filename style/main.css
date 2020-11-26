@@ -14,7 +14,8 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Roboto", sans-serif;
   background: var(--pink);
   font-size: 16px;
   line-height: 1.5;
@@ -102,7 +103,11 @@ a {
     color: #ffffff;
   }
 }
-
+@media (max-width: 960px) {
+  .kontakt-top {
+    display: none;
+  }
+}
 /* header button */
 header .menu-btn {
   position: absolute;
